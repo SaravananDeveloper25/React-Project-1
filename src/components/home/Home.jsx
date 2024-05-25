@@ -27,7 +27,7 @@ const Home = () => {
        <img src={banner} alt="banner" style={{width:"100%",marginTop:"4.75rem"}}/>
        <Container >
        <section className='trending_courses'>
-            <span>TRENDING COURSES</span>
+            <span>TRENDING COURSE</span>
              <MyCard />    
        </section>
        <section className='our_services'>
