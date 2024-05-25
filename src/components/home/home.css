@@ -1,0 +1,170 @@
+.trending_courses{
+    text-align: center;
+  
+ }
+ .trending_courses span{
+     font-weight: 700;
+     border-bottom:4px solid red;
+ }
+ .our_services{
+     text-align: center;
+   
+  }
+  .our_services span{
+      font-weight: 700;
+      border-bottom:4px solid red;
+  }
+  
+  .placent_process{
+     text-align: center;
+  }
+  .placent_process span{
+     font-weight: 700;
+     border-bottom:4px solid red;
+  }
+  .placement_partners{
+     text-align: center;
+  }
+  .placement_partners span{
+     font-weight: 700;
+     border-bottom:4px solid red;
+  }
+  .Review{
+   text-align: center;
+  }
+  .Review span{
+   font-weight: 700;
+   border-bottom:4px solid red;
+  }
+ /* card */
+ .Coursecard{
+     position: relative;
+     text-align: left;
+     height: 230px;
+ }
+ .content{
+     display: none;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.733);
+     padding: 20px;
+     color: white;
+     border-radius: 5px;
+  
+ }
+ .contentB{
+   background-color: #ffffff00;
+   text-align: center;
+   border: 2px solid #fff;
+   padding: 5px;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-bottom:2px;
+ }
+ .Coursecard:hover .content{
+     display: block;
+    
+ }
+ .contact_banner{
+    text-decoration: none;
+    margin: 0;
+    background-image:linear-gradient(to right,rgb(0, 0, 71),rgb(22, 22, 102),rgb(93, 93, 179));
+    width: 100%;
+    max-height: 250px;
+    min-height: 250px;
+    color: #fff;
+    box-shadow: 5px 5px 5px rgb(93, 93, 179);
+  
+ }
+ .contact_banner i{
+    margin-right:10px ;
+    font-size: 20px;
+ }
+ .contact_banner a{
+    text-decoration:none;
+    background-color:#fff;
+    padding:10px;
+    border-radius:10px;
+    font-weight: 600;
+ }
+ .contact_banner a:hover{
+    background-color: red;
+    color: #fff;
+ }
+
+ .Self-assessment-Evaluation{
+    text-align: center;
+ }
+ .Self-assessment-Evaluation span{
+    font-weight: 700;
+    border-bottom:4px solid red;
+ }
+ @media (max-width:950px) {
+   .Content_box2{
+      display:flex;
+      flex-direction: row;
+      font-size: 70%;
+      align-items: center;
+      
+   }
+   .Content_box2 p{
+      margin-top: 10px;
+   }
+   .Content_box2 div{
+      margin-left: 20px;
+      margin-right: 10px;
+   }
+ }
+ @media (max-width:650px) {
+   .Coursecard{
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+      
+  }
+  .Coursecard img{
+      width: 100px;
+  }
+  .Coursecard:hover .content{
+      display: none;
+  }
+  .our_services{
+      display: none;
+  }
+  .contact_banner{
+   min-height:280px ;
+  }
+
+   .Content_box2{
+      display:flex;
+      flex-direction: row;
+      font-size: 70%;
+      align-items: center;
+      
+   }
+   .Content_box2 p{
+      margin-top: 10px;
+   }
+   .Content_box2 div{
+      margin-left: 20px;
+      margin-right: 10px;
+   }
+    .hide{
+      display: none;
+    }
+    .center{
+      text-align: center;
+    }
+    .content{
+      display: none;
+    }
+    .cardimg{
+      height: 300px;
+    }
+    #hide{
+      display: none;
+    }
+ }
