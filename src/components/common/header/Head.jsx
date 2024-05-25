@@ -7,7 +7,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import SecHead from './SecHead';
 import Modal from 'react-modal';
 import Courses from '../Courses';
 import { Link, useNavigate } from 'react-router-dom';
@@ -17,12 +16,48 @@ Modal.setAppElement('#root');
 const Head = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [offcanvasShow, setOffcanvasShow] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+
   const navigate = useNavigate();
 
   const handleLinkClick = (path) => {
     setOffcanvasShow(false);
     navigate(path);
   };
+
+  //for search pages
+  const searchRoutes = {
+    'home': '/',
+    'java': '/courses/java',
+    'python': '/courses/python',
+    'csharp': '/courses/Csharp',
+    'c#': '/courses/Csharp',
+    'review': '/review'
+    // Add more mappings as needed
+  };
+
+  const handleSearch = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const executeSearch = () => {
+    const lowerCaseQuery = searchQuery.toLowerCase();
+    const route = searchRoutes[lowerCaseQuery];
+    if (route) {
+      navigate(route);
+      setOffcanvasShow(false);
+    } else {
+      navigate('/notfound');
+      setOffcanvasShow(false);
+    }
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      executeSearch();
+    }
+  };
+
 
   return (
     <>
@@ -63,8 +98,11 @@ const Head = () => {
                         placeholder="Search"
                         className="me-2"
                         aria-label="Search"
+                        value={searchQuery}
+                        onChange={handleSearch}
+                        onKeyPress={handleKeyPress}
                       />
-                      <Button variant="outline-danger">Search</Button>
+                      <Button onClick={executeSearch} variant="outline-danger">Search</Button>
                     </Form>
                   </Nav>
                   <Nav>

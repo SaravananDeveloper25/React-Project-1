@@ -5,6 +5,7 @@ import './App.css';
 import Home from './components/home/Home';
 import Java from './components/Courses/java/Java'
 import Python from './components/Courses/python/python'
+import Csharp from './components/Courses/Csharp/Csharp';
 import StudentReview from './components/Review/StudentReview';
 import Footer from './components/common/footer/Footer';
 import NotFound from './components/common/NotFound';
@@ -48,6 +49,7 @@ const App = () => {
           <Route path='/courses' >
             <Route path='/courses/java' element={<Java />}></Route>
             <Route path='/courses/python' element={<Python />}></Route>
+            <Route path='/courses/Csharp' element={<Csharp />}></Route>
           </Route>
           <Route path='/review' element={<StudentReview />} />
           <Route path='*' element={<NotFound />} />

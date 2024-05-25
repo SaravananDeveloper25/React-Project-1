@@ -92,7 +92,7 @@ const Courses = ({ setModalIsOpen }) => {
                             <img src={python} alt="" />
                             <p>Core Python</p>
                         </div>                        
-                        <div>
+                        <div onClick={() => handleLinkClick('/courses/Csharp')}>
                             <img src={c} alt="" />
                             <p>C# (C Sharp)</p>
                         </div>                      

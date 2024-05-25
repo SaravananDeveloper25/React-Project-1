@@ -1,9 +1,9 @@
 
 const traingcourse= [
     {
-        "img":'http://localhost:3000/images/python.jpg',
+        "img":'https://saravanandeveloper25.github.io/React-Project-1/images/python.jpg',
         "title":'Python FullStack Course ',
-        "star":'http://localhost:3000/images/star.jpg',
+        "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(20000)',
         "description":
             {"l1":"Practical Application",
@@ -12,9 +12,9 @@ const traingcourse= [
             }
     },
     {
-        "img":'http://localhost:3000/images/java.jpg',
+        "img":'https://saravanandeveloper25.github.io/React-Project-1/images/java.jpg',
         "title":'Java FullStack Course ',
-        "star":'http://localhost:3000/images/star.jpg',
+        "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(23000)',
         "description":
             {"l1":"Rigorous Curriculum",
@@ -23,9 +23,9 @@ const traingcourse= [
             }
     },
     {
-        "img":'http://localhost:3000/images/digital marketing.jpg',
+        "img":'https://saravanandeveloper25.github.io/React-Project-1/images/digital marketing.jpg',
         "title":'Digital Marketing Course ',
-        "star":'http://localhost:3000/images/star.jpg',
+        "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(18120)',
         "description":
             {"l1":"Practical Application",
@@ -34,9 +34,9 @@ const traingcourse= [
             }
     },
     {
-        "img":'http://localhost:3000/images/data analytis.jpg',
+        "img":'https://saravanandeveloper25.github.io/React-Project-1/images/data analytis.jpg',
         "title":'Data Analytics Course ',
-        "star":'http://localhost:3000/images/star.jpg',
+        "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(16200)',
         "description":
             {"l1":"Learn Data Processing",
@@ -45,9 +45,9 @@ const traingcourse= [
             }
     },
     {
-        "img":'http://localhost:3000/images/ai.jpg',
+        "img":'https://saravanandeveloper25.github.io/React-Project-1/images/ai.jpg',
         "title":'Artificial Intelligence Course ',
-        "star":'http://localhost:3000/images/star.jpg',
+        "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(17640)',
         "description":
             {"l1":"100% Placement",
@@ -56,9 +56,9 @@ const traingcourse= [
             }
     },
     {
-        "img":'http://localhost:3000/images/aws.jpg',
+        "img":'https://saravanandeveloper25.github.io/React-Project-1/images/aws.jpg',
         "title":'Amazon Web Services Course ',
-        "star":'http://localhost:3000/images/star.jpg',
+        "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(12000)',
         "description":
             {"l1":"Cloud Computing",
@@ -67,9 +67,9 @@ const traingcourse= [
             }
     },
     {
-        "img":'http://localhost:3000/images/azure.jpg',
+        "img":'https://saravanandeveloper25.github.io/React-Project-1/images/azure.jpg',
         "title":'Azure Certification Course ',
-        "star":'http://localhost:3000/images/star.jpg',
+        "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(14340)',
         "description":
             {"l1":"AI Services",
@@ -78,9 +78,9 @@ const traingcourse= [
             }
     },
     {
-        "img":'http://localhost:3000/images/cybersecurity.jpg',
+        "img":'https://saravanandeveloper25.github.io/React-Project-1/images/cybersecurity.jpg',
         "title":'Cyber Security Course ',
-        "star":'http://localhost:3000/images/star.jpg',
+        "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(11276)',
         "description":
             {"l1":"Practical Application",
