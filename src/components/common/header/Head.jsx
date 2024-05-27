@@ -63,10 +63,10 @@ const Head = () => {
     <>
       <header>
         {['sm'].map((expand) => (
-          <Navbar key={expand} expand={expand} className="nav mb-3" style={{ backgroundColor: "#121481" }} fixed="top">
+          <Navbar key={expand} expand={expand} className="nav mb-3" style={{ backgroundColor: "#121481",position:'fixed',top:0,width:"100%",zIndex:"3"}}>
             <Container>
               <Navbar.Brand className='brand'>
-                <Link to={'/'}>
+                <Link to={'/'}> 
                   <img src={logo} alt="logo" className='logo' />
                 </Link>
               </Navbar.Brand>

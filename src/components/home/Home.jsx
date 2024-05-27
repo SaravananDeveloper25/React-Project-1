@@ -38,11 +38,12 @@ const Home = () => {
         <span>PLACEMENT PROCESS</span>
             <Placement />
        </section>
+
+       </Container>
        <section className='placement_partners'>
           <span>OUR PLACEMENT PARTNERS</span>
           <PartnersSlide />
        </section>
-       </Container>
        <section className='cbanner'></section>
         <ContactBanner />
         <section className='Self-assessment-Evaluation'>

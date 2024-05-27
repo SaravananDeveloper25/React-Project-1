@@ -10,13 +10,13 @@ const MyCard = () => {
     <Container>
     <Row xs={1} md={2} xl={4} className='g-4'>
     {traingcourse.map((course, index) => (
-  <Col key={index} xs={12} md={6}>
+  <Col key={index} xs={12} md={6} >
     <Card className='Coursecard'>
       <Card.Img variant="top" src={course.img} style={{height:"100px"}} />
       <Card.Body>
-        <Card.Title style={{whiteSpace:'wrap',marginRight:'30px'}}>{course.title}</Card.Title>
+        <Card.Title >{course.title}</Card.Title>
         <Card.Text style={{display:'flex',justifyContent:'space-around'}}>
-          <img src={course.star} alt="" height={30} width={80}/>
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
           <p >{course.review}</p>
         </Card.Text>
       </Card.Body>

@@ -41,6 +41,7 @@
      position: relative;
      text-align: left;
      height: 230px;
+     padding: 10px;
  }
  .content{
      display: none;
@@ -50,7 +51,7 @@
      width: 100%;
      height: 100%;
      background-color: rgba(0, 0, 0, 0.733);
-     padding: 20px;
+     padding: 10px;
      color: white;
      border-radius: 5px;
   
@@ -102,6 +103,50 @@
     font-weight: 700;
     border-bottom:4px solid red;
  }
+ .logos{
+   overflow: hidden;
+   padding: 60px 0;
+   white-space: nowrap;
+   position: relative;
+ }
+ .logos:before,
+ .logos:after {
+   position: absolute;
+   top: 0;
+   width: 100px;
+   height: 100%;
+   content: "";
+   z-index: 2;
+ }
+ 
+ .logos:before {
+   left: 0;
+   background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(219, 222, 249));
+ }
+ 
+ .logos:after {
+   right: 0;
+   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(219, 222, 249));
+ }
+ .logos:hover .logo-slide{
+   animation-play-state: paused;
+ }
+ .logo-slide{
+   display: inline-block;
+   animation: slide 20s infinite linear;
+ }
+ .logo-slide img{
+   height: 100px;
+   margin: 0 40px;
+ }
+ @keyframes slide {
+   from{
+      transform: translateX(0);
+   }
+   to{
+      transform: translateX(-100%);
+   }
+ }
  @media (max-width:950px) {
    .Content_box2{
       display:flex;
@@ -122,7 +167,7 @@
    .Coursecard{
       display: flex;
       flex-direction: row;
-      height: 100px;
+      height: 150px;
       
   }
   .Coursecard img{
