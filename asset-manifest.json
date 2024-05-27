@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Project-1/static/css/main.5720c596.css",
-    "main.js": "/React-Project-1/static/js/main.e5410837.js",
+    "main.css": "/React-Project-1/static/css/main.cbb51e2b.css",
+    "main.js": "/React-Project-1/static/js/main.dea81593.js",
     "static/media/11668340_20945203.jpg": "/React-Project-1/static/media/11668340_20945203.ba1a3dc96822d6fd3dbb.jpg",
     "static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.jpg": "/React-Project-1/static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.e3ce2565b10d65c059c3.jpg",
     "static/media/12291062_Wavy_Tech-20_Single-08.jpg": "/React-Project-1/static/media/12291062_Wavy_Tech-20_Single-08.216df2e1b843c4141b2b.jpg",
@@ -32,11 +32,11 @@
     "static/media/slick.ttf": "/React-Project-1/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/React-Project-1/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-Project-1/index.html",
-    "main.5720c596.css.map": "/React-Project-1/static/css/main.5720c596.css.map",
-    "main.e5410837.js.map": "/React-Project-1/static/js/main.e5410837.js.map"
+    "main.cbb51e2b.css.map": "/React-Project-1/static/css/main.cbb51e2b.css.map",
+    "main.dea81593.js.map": "/React-Project-1/static/js/main.dea81593.js.map"
   },
   "entrypoints": [
-    "static/css/main.5720c596.css",
-    "static/js/main.e5410837.js"
+    "static/css/main.cbb51e2b.css",
+    "static/js/main.dea81593.js"
   ]
 }
