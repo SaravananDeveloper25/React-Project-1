@@ -40,16 +40,34 @@ const Head = () => {
     setSearchQuery(event.target.value);
   };
 
+  const cleanSearchQuery = (query) => {
+    return query.trim().toLowerCase();
+  };
+
   const executeSearch = () => {
-    const lowerCaseQuery = searchQuery.toLowerCase();
-    const route = searchRoutes[lowerCaseQuery];
-    if (route) {
-      navigate(route);
-      setOffcanvasShow(false);
+    const lowerCaseQuery = cleanSearchQuery(searchQuery);
+
+    const queryWords = lowerCaseQuery.split(' ');
+
+    let matchedRoute = null;
+    for (let i = queryWords.length; i > 0; i--) {
+      for (let j = 0; j <= queryWords.length - i; j++) {
+        const subQuery = queryWords.slice(j, j + i).join(' ');
+        if (searchRoutes[subQuery]) {
+          matchedRoute = searchRoutes[subQuery];
+          break;
+        }
+      }
+      if (matchedRoute) break;
+    }
+
+    if (matchedRoute) {
+      navigate(matchedRoute);
     } else {
       navigate('/notfound');
-      setOffcanvasShow(false);
     }
+
+    setOffcanvasShow(false);
   };
 
   const handleKeyPress = (event) => {
@@ -57,6 +75,7 @@ const Head = () => {
       executeSearch();
     }
   };
+
 
 
   return (
@@ -101,13 +120,14 @@ const Head = () => {
                         value={searchQuery}
                         onChange={handleSearch}
                         onKeyPress={handleKeyPress}
+                        id='search'
                       />
                       <Button onClick={executeSearch} variant="outline-danger">Search</Button>
                     </Form>
                   </Nav>
                   <Nav>
                     <Nav.Link style={{ color: "white" }} onClick={() => handleLinkClick('/')}>All Courses</Nav.Link>
-                    <Nav.Link style={{ color: "white" }} onClick={() => handleLinkClick('/corporate-training')}>Corporate Training</Nav.Link>
+                    <Nav.Link style={{ color: "white" }} onClick={() => handleLinkClick('/studentzone')}>Student Zone</Nav.Link>
                     <Nav.Link>
                       <Link to='/review' style={{ color: "white", textDecoration: 'none' }} onClick={() => handleLinkClick('/review')}>Review</Link>
                     </Nav.Link>

@@ -102,7 +102,9 @@ nav ul li:hover{
 .particularcourse::-webkit-scrollbar{
     display: none;
 }
-
+#search:focus{
+    padding: 10px;
+}
 @media (max-width:1050px){
     .nav{
         margin: 0;
