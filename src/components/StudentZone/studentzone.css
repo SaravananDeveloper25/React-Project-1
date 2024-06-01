@@ -1,4 +1,8 @@
-.zone-banner {
+
+*{
+    margin: 0;
+    padding: 0;
+}.zone-banner {
     text-align: center;
     height: 100vh;
     width: 100%;
@@ -16,4 +20,21 @@
 
 .zone-banner:hover {
     opacity: 1;
+}
+.topic-box{
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+.topic-box div>p{
+    margin-left: 5px;
+
+}
+.topic-box .button{
+    display: flex;
+    justify-content: end;
+}
+.topic-box .button>button{
+    border: none;
+    background-color: red;
 }

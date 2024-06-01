@@ -34,7 +34,7 @@ const ServiceCard = () => {
     },
     {
         img:'https://saravanandeveloper25.github.io/React-Project-1/images/Career Counseling.jpg',
-        title:'Career Counseling',
+        title:'Communication Skill',
         des:` The institute offers personalized career counseling services to help students identify their strengths, explore career paths, and make informed decisions about their professional future.`
     },
     {

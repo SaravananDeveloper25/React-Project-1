@@ -8,6 +8,29 @@ import CurriculumForm from './CurriculumForm';
 import Faq from './Faq';
 import Certificate from './Certificate';
 import JavaReview from './JavaReview';
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+    initial: { opacity: 0, y: 50 },
+    animate: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            staggerChildren: 0.3,
+            duration: 0.5,
+        },
+    },
+};
+
+const childVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5 },
+    },
+};
+
 
 const Java = () => {
     const [toggle, setToggle] = useState(null); // Initialize toggle state to null
@@ -22,45 +45,71 @@ const Java = () => {
                 <Container >
                     <Row className='banner_row'>
                         <Col xs={12} md={12} xl={8} className='banner_col mt-4'>
-                            <h1>java Training Course</h1>
-                            <p>Join the program and get the opportunity to learn under the guidance of an java specialist.</p>
-                            <div>
-                                <span>⭐️⭐️⭐️⭐️</span>
-                                <span></span>
-                            </div>
-                            <hr />
-                            <div style={{ display: 'flex' }} id='banner_p'>
-                                <p className='banner_p'>Course Duration 30 Hrs.</p>
-                                <p className='banner_p'>Live Project <br /> 3 Project</p>
-                                <p className='banner_p'>Certification<br /> PassGuaranteed</p>
-                                <p className='banner_p' >Training Format<br /> Live Online /Classroom</p>
-                            </div>
-                            <div className='btns'>
-                                <button className='button1' >Placement</button>
-                                <button className='button2'>Syllabus</button>
-                                <button className='button2'>Interview Questions</button>
-                            </div>
-
+                            <motion.div
+                                initial="initial"
+                                animate="animate"
+                                variants={containerVariants}
+                            >
+                                <motion.h1 variants={childVariants}>Java Training Course</motion.h1>
+                                <motion.p variants={childVariants}>
+                                    Join the program and get the opportunity to learn under the guidance of a Java specialist.
+                                </motion.p>
+                                <motion.div variants={childVariants}>
+                                    <span>⭐️⭐️⭐️⭐️</span>
+                                </motion.div>
+                                <motion.hr variants={childVariants} />
+                                <motion.div style={{ display: 'flex' }} id='banner_p' variants={childVariants}>
+                                    <p className='banner_p'>Course Duration <br /> 30 Hrs.</p>
+                                    <p className='banner_p'>Live Project <br /> 3 Projects</p>
+                                    <p className='banner_p'>Certification<br /> Pass Guaranteed</p>
+                                    <p className='banner_p'>Training Format<br /> Live Online / Classroom</p>
+                                </motion.div>
+                                <motion.div className='btns' variants={childVariants}>
+                                    <button className='button1'>Placement</button>
+                                    <button className='button2'>Syllabus</button>
+                                    <button className='button2'>Interview Questions</button>
+                                </motion.div>
+                            </motion.div>
                         </Col>
-                        <Col id='hide' className=' mt-4 ' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                            <div>
-
-                            </div>
-                            <img id='hide' src="https://picsum.photos/200/300" alt="" height={200} width={300} />
-                            <button id='hide' style={{ backgroundColor: 'rgb(189, 28, 28)', padding: '10px', width: '200px', border: 'none', margin: '10px 10px 0 0', color: '#fff' }}>Guide me</button>
+                        <Col
+                            id='hide'
+                            className='mt-4'
+                            style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
+                        >
+                            <motion.div initial="initial" animate="animate" variants={childVariants}>
+                                <img id='hide' src="https://picsum.photos/200/300" alt="" height={200} width={300} />
+                                <button
+                                    id='hide'
+                                    style={{
+                                        backgroundColor: 'rgb(189, 28, 28)',
+                                        padding: '10px',
+                                        width: '200px',
+                                        border: 'none',
+                                        margin: '10px 10px 0 0',
+                                        color: '#fff'
+                                    }}
+                                >
+                                    Guide me
+                                </button>
+                            </motion.div>
                         </Col>
                     </Row>
                     <div className='Speciality'>
-                        <h3>Speciality</h3>
-                        <hr />
-                        <div className='Speciality_box'>
-                            <span>Lorem, ipsum.ipsumipsum</span>
-                            <span>Lorem, ipsum.ipsumipsum</span>
-                            <span>Lorem, ipsum.ipsumipsum</span>
-                            <span>Lorem, ipsum.ipsumipsum</span>
-                        </div>
+                        <motion.div
+                            initial="initial"
+                            animate="animate"
+                            variants={containerVariants}
+                        >
+                            <motion.h3 variants={childVariants}>Speciality</motion.h3>
+                            <motion.hr variants={childVariants} />
+                            <div className='Speciality_box'>
+                                <motion.span variants={childVariants}>Lorem, ipsum.ipsumipsum</motion.span>
+                                <motion.span variants={childVariants}>Lorem, ipsum.ipsumipsum</motion.span>
+                                <motion.span variants={childVariants}>Lorem, ipsum.ipsumipsum</motion.span>
+                                <motion.span variants={childVariants}>Lorem, ipsum.ipsumipsum</motion.span>
+                            </div>
+                        </motion.div>
                     </div>
-
                 </Container>
             </div>
 
@@ -90,7 +139,7 @@ const Java = () => {
                         }
                     </Col>
                     <Col>
-                        <div style={{ position: 'sticky', top: '5rem' }}>
+                        <div style={{ position: 'sticky', top: '6rem' }}>
                             <h3>Java Training in Bengaluru</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore cum in doloremque fugiat facere hic earum vero similique dolorem, porro possimus beatae ratione odit magnam ullam, rerum quam tempore! Iure.</p>
                         </div>
@@ -183,7 +232,7 @@ const Java = () => {
                             </ul>
                         </Col>
                         <Col  >
-                            <div style={{ position: 'sticky', top: '5rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <div style={{ position: 'sticky', top: '6rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <CurriculumForm />
                             </div>
                         </Col>
@@ -222,67 +271,67 @@ const Java = () => {
                 <section></section>
                 <div>
                     <Container>
-                    <Row>
-                        <Col md={4}>
-                            <div style={{backgroundColor:'#fff',textAlign:'justify',padding:'10px',borderRadius:'10px'}}>
-                                <div style={{display:'flex',alignItems:'center'}}>
-                                    <img src="" alt="" style={{height:'100px',width:'100px',margin:'10px'}}/>
-                                    <h5>heading</h5>
+                        <Row>
+                            <Col md={4}>
+                                <div style={{ backgroundColor: '#fff', textAlign: 'justify', padding: '10px', borderRadius: '10px' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <img src="" alt="" style={{ height: '100px', width: '100px', margin: '10px' }} />
+                                        <h5>heading</h5>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div style={{backgroundColor:'#fff',textAlign:'justify',padding:'10px',borderRadius:'10px'}}>
-                                <div style={{display:'flex',alignItems:'center'}}>
-                                    <img src="" alt="" style={{height:'100px',width:'100px',margin:'10px'}}/>
-                                    <h5>heading</h5>
+                            </Col>
+                            <Col md={4}>
+                                <div style={{ backgroundColor: '#fff', textAlign: 'justify', padding: '10px', borderRadius: '10px' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <img src="" alt="" style={{ height: '100px', width: '100px', margin: '10px' }} />
+                                        <h5>heading</h5>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div style={{backgroundColor:'#fff',textAlign:'justify',padding:'10px',borderRadius:'10px'}}>
-                                <div style={{display:'flex',alignItems:'center'}}>
-                                    <img src="" alt="" style={{height:'100px',width:'100px',margin:'10px'}}/>
-                                    <h5>heading</h5>
+                            </Col>
+                            <Col md={4}>
+                                <div style={{ backgroundColor: '#fff', textAlign: 'justify', padding: '10px', borderRadius: '10px' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <img src="" alt="" style={{ height: '100px', width: '100px', margin: '10px' }} />
+                                        <h5>heading</h5>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
-                            </div>
-                        </Col>
-                    </Row>
-                    <section></section>
-                    <Row>
-                    <Col  md={4}>
-                            <div style={{backgroundColor:'#fff',textAlign:'justify',padding:'10px',borderRadius:'10px'}}>
-                                <div style={{display:'flex',alignItems:'center'}}>
-                                    <img src="" alt="" style={{height:'100px',width:'100px',margin:'10px'}}/>
-                                    <h5>heading</h5>
+                            </Col>
+                        </Row>
+                        <section></section>
+                        <Row>
+                            <Col md={4}>
+                                <div style={{ backgroundColor: '#fff', textAlign: 'justify', padding: '10px', borderRadius: '10px' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <img src="" alt="" style={{ height: '100px', width: '100px', margin: '10px' }} />
+                                        <h5>heading</h5>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
-                            </div>
-                        </Col>
-                        <Col  md={4}>
-                            <div style={{backgroundColor:'#fff',textAlign:'justify',padding:'10px',borderRadius:'10px'}}>
-                                <div style={{display:'flex',alignItems:'center'}}>
-                                    <img src="" alt="" style={{height:'100px',width:'100px',margin:'10px'}}/>
-                                    <h5>heading</h5>
+                            </Col>
+                            <Col md={4}>
+                                <div style={{ backgroundColor: '#fff', textAlign: 'justify', padding: '10px', borderRadius: '10px' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <img src="" alt="" style={{ height: '100px', width: '100px', margin: '10px' }} />
+                                        <h5>heading</h5>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
-                            </div>
-                        </Col>
-                        <Col  md={4}>
-                            <div style={{backgroundColor:'#fff',textAlign:'justify',padding:'10px',borderRadius:'10px'}}>
-                                <div style={{display:'flex',alignItems:'center'}}>
-                                    <img src="" alt="" style={{height:'100px',width:'100px',margin:'10px'}}/>
-                                    <h5>heading</h5>
+                            </Col>
+                            <Col md={4}>
+                                <div style={{ backgroundColor: '#fff', textAlign: 'justify', padding: '10px', borderRadius: '10px' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <img src="" alt="" style={{ height: '100px', width: '100px', margin: '10px' }} />
+                                        <h5>heading</h5>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi architecto!  facilis!</p>
-                            </div>
-                        </Col>
-                    </Row>
+                            </Col>
+                        </Row>
                     </Container>
-                    
+
                 </div>
             </section>
             <section className='training-certificate'>

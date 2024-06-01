@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from '../../images/Copy-of-Offer.webp'
+// import banner from '../../images/Copy-of-Offer.webp'
 import MyCard from './TcourseCard';
 import { Container } from 'react-bootstrap';
 import ServiceCard from './ServiceCard';
@@ -16,6 +16,7 @@ import qa from '../../images/Query Elaboration.png'
 import el from '../../images/Elucidation.png'
 import analaysis from '../../images/analysis.png'
 import ContactBanner from '../common/ContactBanner';
+import Banner from './Banner'
 
 
 
@@ -24,7 +25,9 @@ const Home = () => {
  
   return (
     <div className='home'>
-       <img src={banner} alt="banner" style={{width:"100%",marginTop:"4.75rem"}}/>
+      <div className='home-banner'>
+        <Banner/>
+      </div>
        <Container >
        <section className='trending_courses'>
             <span>TRENDING COURSE</span>

@@ -86,7 +86,7 @@ const Head = () => {
             <Container>
               <Navbar.Brand className='brand'>
                 <Link to={'/'}> 
-                  <img src={logo} alt="logo" className='logo' />
+                  <img src={logo} alt="logo" className='logo'  />
                 </Link>
               </Navbar.Brand>
               <Nav.Link

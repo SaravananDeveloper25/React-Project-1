@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import java from '../../images/java-logo.png';
 import python from '../../images/python.png';
 import c from '../../images/sharp-logo.png';
@@ -82,6 +82,7 @@ const Courses = ({ setModalIsOpen }) => {
                 <p onClick={() => handleToggle('Ml')}>Industry Automation</p>
             </div>
             <div className='particularcourse'>
+                
                 {toggle === 'programming' && (
                     <div className='coursename'>
                         <div onClick={() => handleLinkClick('/courses/java')}>
