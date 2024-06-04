@@ -154,10 +154,12 @@
  .logo-slide{
    display: inline-block;
    animation: slide 20s infinite linear;
+  
  }
  .logo-slide img{
    height: 100px;
    margin: 0 40px;
+   aspect-ratio: 16/9;
  }
  @keyframes slide {
    from{

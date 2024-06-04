@@ -11,6 +11,7 @@ import Footer from './components/common/footer/Footer';
 import NotFound from './components/common/NotFound';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import StudentZone from './components/StudentZone/StudentZone';
+import AllCoursesPage from './components/common/AllCoursesPage';
 
 const App = () => {
   
@@ -52,6 +53,7 @@ const App = () => {
             <Route path='/courses/python' element={<Python />}></Route>
             <Route path='/courses/Csharp' element={<Csharp />}></Route>
           </Route>
+          <Route path='/allcourses' element={<AllCoursesPage/>}/>
           <Route path='/studentzone' element={<StudentZone/>}/>
           <Route path='/review' element={<StudentReview />} />
           <Route path='*' element={<NotFound />} />

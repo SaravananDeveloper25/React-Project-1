@@ -126,7 +126,7 @@ const Head = () => {
                     </Form>
                   </Nav>
                   <Nav>
-                    <Nav.Link style={{ color: "white" }} onClick={() => handleLinkClick('/')}>All Courses</Nav.Link>
+                    <Nav.Link style={{ color: "white" }} onClick={() => handleLinkClick('/allcourses')}>All Courses</Nav.Link>
                     <Nav.Link style={{ color: "white" }} onClick={() => handleLinkClick('/studentzone')}>Student Zone</Nav.Link>
                     <Nav.Link>
                       <Link to='/review' style={{ color: "white", textDecoration: 'none' }} onClick={() => handleLinkClick('/review')}>Review</Link>
