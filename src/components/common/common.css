@@ -63,12 +63,30 @@
    height: 100%;
    padding: 10px;
    color: rgb(255, 255, 255);
-   border-radius: 5px;
+   border-radius: 10px;
    display: flex;
    align-items: center;
    justify-content: center;
    background-color: rgba(0, 0, 0, 0.32);
  }
+ .know-more-button {
+   padding: 10px;
+   background-color: red;
+   margin: 10px 0;
+   color: #fff;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.syllabus-button {
+   padding: 10px;
+   border: 2px solid red;
+   margin: 10px 0;
+   color: red;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
  @media (max-width:950px) {
    .contact_banner{
       min-height:280px ;

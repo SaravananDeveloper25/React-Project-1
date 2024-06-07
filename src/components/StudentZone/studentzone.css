@@ -21,20 +21,81 @@
 .zone-banner:hover {
     opacity: 1;
 }
-.topic-box{
-    background-color: #fff;
-    padding: 20px;
-    text-align: left;
-}
-.topic-box div>p{
-    margin-left: 5px;
 
+.placement-test{
+    background-image:linear-gradient(to right,rgb(0, 0, 71),rgb(22, 22, 102),rgb(93, 93, 179));
+    color: #fff;
+    height: 50vh;
 }
-.topic-box .button{
+#col1{
     display: flex;
-    justify-content: end;
+    align-items: center;
 }
-.topic-box .button>button{
+#col2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#col2>button{
+    margin-top: 10px;
+    padding: 5px;
+    width: 100px;
     border: none;
+    background: transparent;
+    color: #fff;
+    transition: .5s all;
+    outline: 2px solid red;
+    border-radius: 3px;
+    font-weight: 600;
+}
+#col2>button:hover{
+    transform: scale(.8);
+    box-shadow: 1px 1px 6px 10px red;
+    outline-offset: 10px;
+    outline: 5px solid red;
     background-color: red;
+}
+.recard {
+    margin: 20px 0;
+}
+
+.resume-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.resume-card img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.resume-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.resume-card button:hover {
+    background-color: #0056b3;
+}
+
+@media(max-width:600px) and (max-width:450px) {
+    .placement-test{
+        background-image:linear-gradient(to right,rgb(0, 0, 71),rgb(22, 22, 102),rgb(93, 93, 179));
+        color: #fff;
+        height: 60vh;
+    }
+}
+@media(min-width:600px) and (max-width:950px) {
+    .placement-test{
+        background-image:linear-gradient(to right,rgb(0, 0, 71),rgb(22, 22, 102),rgb(93, 93, 179));
+        color: #fff;
+        height: 30vh;
+    }
 }
