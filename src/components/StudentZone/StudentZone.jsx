@@ -1,8 +1,12 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './studentzone.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import Resume from './Resume'
+import PlacedStudent from './PlacedStudent'
 function StudentZone() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div style={{ marginTop: '5rem' }}>
       <div className='zone-banner'>
@@ -32,6 +36,11 @@ function StudentZone() {
       <section className='sr' style={{ textAlign: "center" }}>
         <span style={{ fontWeight: 700, fontSize: "1.5rem", borderBottom: "5px solid red" }}>Sample Resume</span>
         <Resume />
+      </section>
+      <section style={{ textAlign: "center" }}>
+      <span style={{ fontWeight: 700, fontSize: "1.5rem", borderBottom: "5px solid red" }}>Placement list</span>
+        <section></section>
+        <PlacedStudent/>
       </section>
       <section style={{ textAlign: "center" }}>
         <span style={{ fontWeight: 700, fontSize: "1.5rem", borderBottom: "5px solid red" }}>Intenrship</span>
@@ -69,13 +78,42 @@ function StudentZone() {
        
       <span style={{ fontWeight: 700, fontSize: "1.5rem", borderBottom: "5px solid red" }}>OnJob Support</span>
       <section></section>
-      <Container style={{ background: '#fff', padding: '20px', boxShadow: '0px 0px 2px 2px rgb(0,0,100,.7)' }}>
-
+      <Container style={{ background: '#fff', padding: '20px', boxShadow: '0px 0px 2px 2px rgb(0,0,100,.7)',textAlign:'left' }}>
+        <section></section>
+      <h3 style={{ width: '200px', borderBottom: '4px solid', color: 'blue', padding: '5px' }}>Job Suport</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequatur eum ipsam non nesciunt dignissimos, tempora sequi error vel voluptas pariatur atque eius magnam deleniti officiis eligendi! Porro, laborum amet!</p>
+        <section></section>
+        <h3 style={{ width: '200px', borderBottom: '4px solid', color: 'blue', padding: '5px' }}>Our Promise</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat necessitatibus, incidunt cumque officia voluptas culpa harum alias assumenda magni quibusdam et repellendus nesciunt veniam adipisci molestiae quaerat id temporibus quod.</p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, vero.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, vero.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, vero.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, vero.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, vero.</li>
+        </ul>
+        <section></section>
+        <h3 style={{ width: '250px', borderBottom: '4px solid', color: 'blue', padding: '5px' }}>Why Choose us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatum ut aspernatur culpa. Consequatur reiciendis culpa eos quas blanditiis a, rem quod, ratione commodi, deleniti obcaecati quasi quaerat quam in?</p>
+        <section></section>
+        <h3 style={{ width: '150px', borderBottom: '4px solid', color: 'blue', padding: '5px' }}>We offer</h3>
+        <Row style={{textAlign:'justify'}}>
+          <Col style={{padding:'30px',margin:'30px',boxShadow:'0px 0px 2px 2px gray'}}>
+            <h3 style={{textAlign:'center'}}>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, quibusdam. Magni, reiciendis eos natus harum dolorem optio recusandae quaerat? Nulla est debitis fugiat sint, porro aliquam non voluptate eaque necessitatibus?</p>
+          </Col>
+          <Col style={{padding:'30px',margin:'30px',boxShadow:'0px 0px 2px 2px gray'}}>
+            <h3 style={{textAlign:'center'}}>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, quibusdam. Magni, reiciendis eos natus harum dolorem optio recusandae quaerat? Nulla est debitis fugiat sint, porro aliquam non voluptate eaque necessitatibus?</p>
+          </Col>
+          <Col style={{padding:'30px',margin:'30px',boxShadow:'0px 0px 2px 2px gray'}}>
+            <h3 style={{textAlign:'center'}}>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, quibusdam. Magni, reiciendis eos natus harum dolorem optio recusandae quaerat? Nulla est debitis fugiat sint, porro aliquam non voluptate eaque necessitatibus?</p>
+          </Col>
+        </Row>
       </Container>
       </section>
-      <section>
-        
-      </section>
+      <section></section>
     </div>
   )
 }

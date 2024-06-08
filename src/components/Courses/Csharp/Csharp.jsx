@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import RequestForm from '../java/RequestForm';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './csharp.css';
@@ -10,6 +10,9 @@ import Certificate from '../java/Certificate';
 import CsharpReview from './CsharpReview'
 
 const Csharp = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const [toggle, setToggle] = useState(null); // Initialize toggle state to null
 
     function handleClick(index) {

@@ -6,6 +6,10 @@ import wl from '../../images/women logo.png';
 import './review.css'
 import stdreviews from '../../data/stdreviews';
 const StudentReview = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const [reviews, setReviews] = useState(stdreviews,() => {
     const storedReviews = localStorage.getItem('reviews');
     return storedReviews ? JSON.parse(storedReviews) : [];

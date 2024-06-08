@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 // import banner from '../../images/Copy-of-Offer.webp'
 import MyCard from './TcourseCard';
 import { Container } from 'react-bootstrap';
@@ -22,11 +22,15 @@ import Banner from './Banner'
 
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
  
   return (
     <div className='home'>
       <div className='home-banner'>
-        <Banner/>
+        <Banner />
+
       </div>
        <Container >
        <section className='trending_courses'>

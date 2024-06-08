@@ -131,7 +131,7 @@ const Head = () => {
                     <Nav.Link>
                       <Link to='/review' style={{ color: "white", textDecoration: 'none' }} onClick={() => handleLinkClick('/review')}>Review</Link>
                     </Nav.Link>
-                    <Nav.Link style={{ color: "white" }} onClick={() => handleLinkClick('/blog')}>Blog</Nav.Link>
+                    <a href="https://www.getintech.in/blog/" style={{ color: "white",textDecoration:'none',marginTop:'8px' }} target='_blank'>Blog</a>
                     <Nav.Link style={{ color: "white" }} onClick={() => handleLinkClick('/contact')}>Contact</Nav.Link>
                   </Nav>
                 </Offcanvas.Body>

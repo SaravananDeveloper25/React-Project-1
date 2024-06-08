@@ -12,6 +12,7 @@ import NotFound from './components/common/NotFound';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import StudentZone from './components/StudentZone/StudentZone';
 import AllCoursesPage from './components/common/AllCoursesPage';
+import Contact from './components/contact/Contact';
 
 const App = () => {
   
@@ -40,14 +41,14 @@ const App = () => {
       behavior: 'smooth' // Smooth scrolling animation
     });
   };
-  
+
   return (
     <>
     <Router>
       <Head />
       
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home/>} />
           <Route path='/courses' >
             <Route path='/courses/java' element={<Java />}></Route>
             <Route path='/courses/python' element={<Python />}></Route>
@@ -56,6 +57,7 @@ const App = () => {
           <Route path='/allcourses' element={<AllCoursesPage/>}/>
           <Route path='/studentzone' element={<StudentZone/>}/>
           <Route path='/review' element={<StudentReview />} />
+          <Route path='/contact' element={<Contact />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       

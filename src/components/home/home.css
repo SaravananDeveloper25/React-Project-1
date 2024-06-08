@@ -170,9 +170,9 @@
    }
  }
  @media (max-width:950px) {
-   .home-banne{
-      height: 50vh;
-      background-size: cover;
+   .home-banner{
+      height: 30vh;
+      background-size: contain;
    }
    .Content_box2{
       display:flex;

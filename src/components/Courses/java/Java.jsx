@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import RequestForm from './RequestForm';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './courses.css';
@@ -33,6 +33,9 @@ const childVariants = {
 
 
 const Java = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const [toggle, setToggle] = useState(null); // Initialize toggle state to null
 
     function handleClick(index) {
