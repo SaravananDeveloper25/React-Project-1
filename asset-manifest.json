@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Project-1/static/css/main.11331040.css",
-    "main.js": "/React-Project-1/static/js/main.72f46ffe.js",
+    "main.css": "/React-Project-1/static/css/main.423fb9a5.css",
+    "main.js": "/React-Project-1/static/js/main.06b3782f.js",
     "static/media/studentbanner.jpg": "/React-Project-1/static/media/studentbanner.6e83843cd914025a99dd.jpg",
     "static/media/11668340_20945203.jpg": "/React-Project-1/static/media/11668340_20945203.ba1a3dc96822d6fd3dbb.jpg",
     "static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.jpg": "/React-Project-1/static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.e3ce2565b10d65c059c3.jpg",
@@ -44,11 +44,11 @@
     "static/media/slick.ttf": "/React-Project-1/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/React-Project-1/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-Project-1/index.html",
-    "main.11331040.css.map": "/React-Project-1/static/css/main.11331040.css.map",
-    "main.72f46ffe.js.map": "/React-Project-1/static/js/main.72f46ffe.js.map"
+    "main.423fb9a5.css.map": "/React-Project-1/static/css/main.423fb9a5.css.map",
+    "main.06b3782f.js.map": "/React-Project-1/static/js/main.06b3782f.js.map"
   },
   "entrypoints": [
-    "static/css/main.11331040.css",
-    "static/js/main.72f46ffe.js"
+    "static/css/main.423fb9a5.css",
+    "static/js/main.06b3782f.js"
   ]
 }
