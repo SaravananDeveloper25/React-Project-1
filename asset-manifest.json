@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Project-1/static/css/main.423fb9a5.css",
-    "main.js": "/React-Project-1/static/js/main.06b3782f.js",
+    "main.css": "/React-Project-1/static/css/main.c96ad915.css",
+    "main.js": "/React-Project-1/static/js/main.5f3d32ae.js",
     "static/media/studentbanner.jpg": "/React-Project-1/static/media/studentbanner.6e83843cd914025a99dd.jpg",
     "static/media/11668340_20945203.jpg": "/React-Project-1/static/media/11668340_20945203.ba1a3dc96822d6fd3dbb.jpg",
     "static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.jpg": "/React-Project-1/static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.e3ce2565b10d65c059c3.jpg",
@@ -20,6 +20,7 @@
     "static/media/python fullstack.jpg": "/React-Project-1/static/media/python fullstack.4415849c0f2fbfdb2187.jpg",
     "static/media/ZOHO-logo.png": "/React-Project-1/static/media/ZOHO-logo.e72077295393ec02f7ba.png",
     "static/media/9793159_4212150.jpg": "/React-Project-1/static/media/9793159_4212150.36bff438c20d9702c079.jpg",
+    "static/media/contact-banner.png": "/React-Project-1/static/media/contact-banner.50925778d23171dba4f9.png",
     "static/media/logo.png": "/React-Project-1/static/media/logo.c0c3b35ca27d4135f639.png",
     "static/media/404.png": "/React-Project-1/static/media/404.c2c61995f9677097bf24.png",
     "static/media/Cognizant-Logo.png": "/React-Project-1/static/media/Cognizant-Logo.a46dc0b88860264db7c2.png",
@@ -44,11 +45,11 @@
     "static/media/slick.ttf": "/React-Project-1/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/React-Project-1/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-Project-1/index.html",
-    "main.423fb9a5.css.map": "/React-Project-1/static/css/main.423fb9a5.css.map",
-    "main.06b3782f.js.map": "/React-Project-1/static/js/main.06b3782f.js.map"
+    "main.c96ad915.css.map": "/React-Project-1/static/css/main.c96ad915.css.map",
+    "main.5f3d32ae.js.map": "/React-Project-1/static/js/main.5f3d32ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.423fb9a5.css",
-    "static/js/main.06b3782f.js"
+    "static/css/main.c96ad915.css",
+    "static/js/main.5f3d32ae.js"
   ]
 }
