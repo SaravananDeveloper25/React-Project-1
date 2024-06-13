@@ -3,9 +3,24 @@
     padding: 0;
 }
 .contact-banner{
-    height: 60vh;
-    background-color: blue;
+    height: 80vh;
+    background:url(../../images/contact-banner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     position: relative;
+    width: 100%;
+    padding: 50px;
+}
+.banner-content{
+    color: #fff;
+    height: 300px;
+    width: 500px;
+}
+.banner-content>span{
+    display: inline-block;
+    height: 5px;
+    width: 100px;
+    background-color: #fff;
 }
 .contactbox1{
     position: absolute;
@@ -75,7 +90,7 @@
     width: 80px;
     margin-right: 20px;
     border-radius: 50%;
-    border: 5px solid blue;
+    border: 5px solid red;
 }
 .boxx h5{
     padding-top:50px ;
@@ -93,7 +108,149 @@
     border-radius: 50%;
     margin: 2px;
 }
+.boxy{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px rgb(186, 186, 186);
+    position: relative;
+    text-align: center;
+}
+.boxy img{
+    position: absolute;
+    top: -40px;
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 5px solid red;
+}
+.boxy>div{
+    padding-top: 2rem;
+}
+.form{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 2px 2px rgb(202, 196, 196);
+    border-radius: 20px;
+}
+
+.form>input,select,textarea{
+    margin: 10px;
+    
+}
+.form>.form-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.form-head img{
+    position: absolute;
+    bottom: 40px;
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 5px solid red;
+}
+.form-head >h5{
+padding-top: 2rem;
+}
+.inp{
+    position: relative;
+    margin: 10px 0;
+}
+.inp>label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    color: gray;
+    padding: 0 10px;
+    transition: 0.3s;
+}
+.inp>input{
+    width: 100%;
+    
+}
+.inp>input:focus{
+    outline: 1px solid rgb(187, 187, 187);
+    padding: 10px;
+    outline-offset:0;
+    width: 90%;
+    border-radius: 2px;
+}
+.inp>input:focus+label{
+    top: -15px;
+    
+    color: blue;
+    margin:0 10px;
+}
+#input{
+    padding: 0 0 0 50px;
+}
+#input:focus{
+    outline: 1px solid rgb(187, 187, 187);
+    padding: 0 0 0 50px;
+    outline-offset:0;
+    width: 90% !important;
+    border-radius: 2px;
+    box-shadow: none;
+}
+textarea{
+    width: 95%;
+}
+textarea:focus{
+    outline: 1px solid rgb(187, 187, 187);
+    outline-offset:0;
+    width: 90% !important;
+    border-radius: 2px;
+    box-shadow: none;
+}
+.inp>#la{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+textarea:focus+#la{
+    top: -5px;
+   
+    color: blue;
+    margin:0 10px;
+}
+textarea:focus{
+    width: 100%;
+}
+.form>input[type="submit"]{
+    width: 200px;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    box-shadow: 0 0 2px 2px rgb(137, 136, 136);
+    color: #fff;
+    font-weight: 600;
+}
+iframe[src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.4565313437843!2d77.94630977315106!3d9.555855880523383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b012d42f70581bf%3A0x7d3a3a27b3e10ce8!2sGetin%20Technologies%20Virudhunagar!5e0!3m2!1sen!2sin!4v1718189901019!5m2!1sen!2sin"]{
+    height: 400px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px gray;
+    padding: 0;
+    margin: 20px;
+}
 @media (min-width:650px) and (max-width:950px){
+    .contact-banner{
+        height: 40vh;
+    }
     .boxx{
         width: 300px;
         position: relative;
@@ -104,8 +261,15 @@
         height: 100%;
         background: none;
     }
+
 }
 @media (max-width:650px) and (max-width:450px){
+    .contact-banner{
+        background-size: contain;
+        height: 25vh;
+        padding: 0 20px;
+        font-size: 50%;
+    }
     .contactbox1{
         margin: 10px auto;
         width: 300px;
@@ -127,6 +291,15 @@
     .boxx img{
         position: absolute;
         top: -40px;
+    }
+    .banner-content{
+        color: #fff;
+        height: 300px;
+        width: 300px;
+    }
+    #ro{
+        height: 1200px;
+      
     }
 
 }

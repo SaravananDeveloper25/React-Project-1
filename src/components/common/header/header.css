@@ -47,7 +47,7 @@ nav ul li:hover{
 }
 .up{
    position: absolute;
-   top: -5px;
+   top: 20px;
    right: 30%;
    left: 5rem;
     background-color: white;
