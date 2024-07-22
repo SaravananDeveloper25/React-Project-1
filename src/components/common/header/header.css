@@ -1,6 +1,6 @@
 .logo{
     height: 70px;
-    width: 150px;
+    width: 140px;
 }
 .line::after{
     content: '';
@@ -26,6 +26,17 @@ nav ul li{
 nav ul li:hover{
     color: red;
 }
+.offcanvas-custom {
+  background-color: #f8f9fa;
+  color: #0167ce;
+}
+
+.offcanvas-header-custom {
+  background-color: #121481;
+  color: white;
+}
+
+
 .courseB{
     margin-right:5px;
     margin-bottom:5px;
@@ -102,8 +113,14 @@ nav ul li:hover{
 .particularcourse::-webkit-scrollbar{
     display: none;
 }
+#search{
+    padding: 7px;
+    margin-left:10px;
+    margin-top: 3px;
+}
 #search:focus{
     padding: 10px;
+    border-radius: 10px;
 }
 @media (max-width:1050px){
     .logo{

@@ -38,7 +38,7 @@ const Placement = () => {
     <>
       <div>
         <section></section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nemo totam voluptate cum ipsum, quis consectetur modi eius quasi quibusdam obcaecati veniam doloremque maiores voluptatem, officiis vero cumque repellat tempore?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga fugiat voluptatem illo incidunt doloribus? Incidunt voluptatum doloremque maiores, culpa eum dignissimos at, harum ab doloribus voluptate nobis itaque quae voluptas.</p>
+        <p>At Getin Technologies Training Institute in Bengaluru, we are committed to ensuring our students achieve their career aspirations through a comprehensive and strategic placement process. Our structured approach to placements is designed to equip students with the necessary skills, knowledge, and opportunities to secure rewarding positions in top-tier companies.</p>
         <button onClick={handleDownload} style={{background:"red",border:'none',padding:'10px',borderRadius:'10px',fontWeight:600,cursor:'pointer'}}>Downdload placement Report</button>
     </div>
 

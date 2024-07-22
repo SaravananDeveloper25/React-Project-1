@@ -51,7 +51,8 @@ const ServiceCard = () => {
             ar.map((val)=>{
                 return(
                 <Col xs={12} md={6}>
-                    <Card style={{border:'none',boxShadow:'1px 1px 8px 1px rgba(208, 208, 208, 0.614)',height:'300px',background:'#fff',textAlign:'center'}}>
+                    <div style={{position:'relative'}}>
+                    <Card className='service-card'>
                         <Card.Body>
                             <div style={{fontSize:'12px'}}>
                                 <img src={val.img} alt="" height={100} width={100}/>
@@ -61,6 +62,7 @@ const ServiceCard = () => {
                             </div>
                         </Card.Body>
                     </Card>
+                    </div>
                 </Col>
                 )
             })

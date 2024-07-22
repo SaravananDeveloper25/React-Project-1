@@ -16,7 +16,7 @@ import qa from '../../images/Query Elaboration.png'
 import el from '../../images/Elucidation.png'
 import analaysis from '../../images/analysis.png'
 import ContactBanner from '../common/ContactBanner';
-import Banner from './Banner'
+import hi from '../../images/home-image.png'
 
 
 
@@ -29,7 +29,22 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='home-banner'>
-        <Banner />
+        <Container>
+        <Row>
+          <Col xl={6}>
+          <div  className='home-content'>
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nobis voluptate sapiente repudiandae beatae et, eveniet nostrum quae! Placeat blanditiis numquam repellat magni quos veritatis non soluta eius ad consequatur.</p>
+         </div>
+          </Col>
+          <Col xl={6}>
+          <div className='home-image'>
+          <img src={hi} alt=""  />
+          </div>
+          </Col>
+        </Row>
+        </Container>
+
 
       </div>
        <Container >
@@ -108,7 +123,7 @@ const Home = () => {
           <Container>
            <section></section>
 
-            <div style={{marginTop:'150px',marginBottom:'150px'}}>
+            <div style={{marginTop:'180px',marginBottom:'180px'}}>
               <Review />
             </div>
             <button style={{width:'200px',padding:'10px',backgroundColor:'red',border:'none',borderRadius:'10px'}}>More Reviews</button>

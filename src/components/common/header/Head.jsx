@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../../../images/logo.png'; // Adjust the path accordingly
 import './header.css';
 import Container from 'react-bootstrap/Container';
@@ -17,7 +17,7 @@ const Head = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [offcanvasShow, setOffcanvasShow] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-
+  const [nav, setNav] = useState(false);
   const navigate = useNavigate();
 
   const handleLinkClick = (path) => {
@@ -25,15 +25,13 @@ const Head = () => {
     navigate(path);
   };
 
-  //for search pages
   const searchRoutes = {
-    'home': '/',
-    'java': '/courses/java',
-    'python': '/courses/python',
-    'csharp': '/courses/Csharp',
+    home: '/',
+    java: '/courses/java',
+    python: '/courses/python',
+    csharp: '/courses/Csharp',
     'c#': '/courses/Csharp',
-    'review': '/review'
-    // Add more mappings as needed
+    review: '/review',
   };
 
   const handleSearch = (event) => {
@@ -76,25 +74,53 @@ const Head = () => {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setNav(true);
+      } else {
+        setNav(false);
+      }
+    };
 
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
       <header>
         {['sm'].map((expand) => (
-          <Navbar key={expand} expand={expand} className="nav mb-3" style={{ backgroundColor: "#121481",position:'fixed',top:0,width:"100%",zIndex:"3"}}>
+          <Navbar
+            key={expand}
+            expand={expand}
+            className="nav mb-3"
+            style={{
+              backgroundColor: nav ? '#121481' : 'transparent',
+              position: 'fixed',
+              top: 0,
+              width: '100%',
+              zIndex: 3,
+              height: '100px',
+            }}
+          >
             <Container>
-              <Navbar.Brand className='brand'>
-                <Link to={'/'}> 
-                  <img src={logo} alt="logo" className='logo'  />
+              <Navbar.Brand className="brand">
+                <Link to={'/'}>
+                  <img src={logo} alt="logo" className="logo" />
                 </Link>
               </Navbar.Brand>
               <Nav.Link
-                onClick={() => { setModalIsOpen(true); }}
-                className='courseB'
-                style={{ color: 'white', border: "2px solid white", padding: '7px', borderRadius: "5px" }}
+                onClick={() => {
+                  setModalIsOpen(true);
+                }}
+                className="courseB"
+                style={{ color: 'white', border: '2px solid white', padding: '7px', borderRadius: '5px' }}
               >
-                <i className="fa-solid fa-table" style={{ marginRight: "2px" }}></i>Course
+                <i className="fa-solid fa-table" style={{ marginRight: '2px' }}></i>Course
               </Nav.Link>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={() => setOffcanvasShow(true)} />
               <Navbar.Offcanvas
@@ -103,13 +129,12 @@ const Head = () => {
                 placement="end"
                 show={offcanvasShow}
                 onHide={() => setOffcanvasShow(false)}
+                className="offcanvas-custom" // Apply custom class
               >
-                <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    Menu
-                  </Offcanvas.Title>
+                <Offcanvas.Header closeButton className="offcanvas-header-custom">
+                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>Menu</Offcanvas.Title>
                 </Offcanvas.Header>
-                <Offcanvas.Body style={{ background: "#121481" }}>
+                <Offcanvas.Body className="offcanvas-body-custom">
                   <Nav className="justify-content-start flex-grow-1 pe-3">
                     <Form className="d-flex mb-2">
                       <Form.Control
@@ -120,19 +145,27 @@ const Head = () => {
                         value={searchQuery}
                         onChange={handleSearch}
                         onKeyPress={handleKeyPress}
-                        id='search'
+                        id="search"
                       />
-                      <Button onClick={executeSearch} variant="outline-danger">Search</Button>
+                      <Button onClick={executeSearch} variant="outline-danger" style={{ marginTop: '5px' }}>
+                        Search
+                      </Button>
                     </Form>
                   </Nav>
                   <Nav>
-                    <Nav.Link style={{ color: "white" }} onClick={() => handleLinkClick('/allcourses')}>All Courses</Nav.Link>
-                    <Nav.Link style={{ color: "white" }} onClick={() => handleLinkClick('/studentzone')}>Student Zone</Nav.Link>
+                    <Nav.Link onClick={() => handleLinkClick('/allcourses')}>All Courses</Nav.Link>
+                    <Nav.Link onClick={() => handleLinkClick('/studentzone')}>Student Zone</Nav.Link>
                     <Nav.Link>
-                      <Link to='/review' style={{ color: "white", textDecoration: 'none' }} onClick={() => handleLinkClick('/review')}>Review</Link>
+                      <Link to="/review" style={{ color: 'black', textDecoration: 'none' }} onClick={() => handleLinkClick('/review')}>
+                        Review
+                      </Link>
                     </Nav.Link>
-                    <a href="https://www.getintech.in/blog/" style={{ color: "white",textDecoration:'none',marginTop:'8px' }} target='_blank'>Blog</a>
-                    <Nav.Link style={{ color: "white" }} onClick={() => handleLinkClick('/contact')}>Contact</Nav.Link>
+                    <a href="https://www.getintech.in/blog/" style={{ color: 'black', textDecoration: 'none', margin: '8px' }} target="_blank" rel="noopener noreferrer">
+                      Blog
+                    </a>
+                    <Nav.Link style={{ color: 'black' }} onClick={() => handleLinkClick('/contact')}>
+                      Contact
+                    </Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
@@ -142,10 +175,12 @@ const Head = () => {
       </header>
 
       <div>
-        <Modal isOpen={modalIsOpen} onRequestClose={() => { setModalIsOpen(false); }} className={'pop'}>
+        <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className={'pop'}>
           <Container>
             <div className="up">
-              <p className='p'><i className="fa-solid fa-x" style={{ margin: '5px' }} onClick={() => setModalIsOpen(false)}></i></p>
+              <p className="p">
+                <i className="fa-solid fa-x" style={{ margin: '5px' }} onClick={() => setModalIsOpen(false)}></i>
+              </p>
               <h2>Courses</h2>
               <Courses setModalIsOpen={setModalIsOpen} />
             </div>

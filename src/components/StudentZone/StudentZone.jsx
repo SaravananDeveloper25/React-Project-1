@@ -8,7 +8,7 @@ function StudentZone() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div style={{ marginTop: '5rem' }}>
+    <div style={{ }}>
       <div className='zone-banner'>
         <h3>Student Zone</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, animi consectetur culpa in dolore commodi molestiae. Quod laudantium doloribus sapiente perferendis asperiores, eum molestias soluta quos autem laboriosam consectetur culpa!</p>

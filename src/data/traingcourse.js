@@ -2,7 +2,7 @@
 const traingcourse= [
     {
         "img":'https://saravanandeveloper25.github.io/React-Project-1/images/python.jpg',
-        "title":'Python FullStack Course ',
+        "title":'Python FullStack',
         "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(20000)',
         "description":
@@ -13,7 +13,7 @@ const traingcourse= [
     },
     {
         "img":'https://saravanandeveloper25.github.io/React-Project-1/images/java.jpg',
-        "title":'Java FullStack Course ',
+        "title":'Java FullStack ',
         "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(23000)',
         "description":
@@ -24,7 +24,7 @@ const traingcourse= [
     },
     {
         "img":'https://saravanandeveloper25.github.io/React-Project-1/images/digital marketing.jpg',
-        "title":'Digital Marketing Course ',
+        "title":'Digital Marketing  ',
         "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(18120)',
         "description":
@@ -35,7 +35,7 @@ const traingcourse= [
     },
     {
         "img":'https://saravanandeveloper25.github.io/React-Project-1/images/data analytis.jpg',
-        "title":'Data Analytics Course ',
+        "title":'Data Analytics ',
         "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(16200)',
         "description":
@@ -46,7 +46,7 @@ const traingcourse= [
     },
     {
         "img":'https://saravanandeveloper25.github.io/React-Project-1/images/ai.jpg',
-        "title":'Artificial Intelligence Course ',
+        "title":'Artificial Intelligence',
         "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(17640)',
         "description":
@@ -57,7 +57,7 @@ const traingcourse= [
     },
     {
         "img":'https://saravanandeveloper25.github.io/React-Project-1/images/aws.jpg',
-        "title":'Amazon Web Services Course ',
+        "title":'Amazon Web Services',
         "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(12000)',
         "description":
@@ -68,7 +68,7 @@ const traingcourse= [
     },
     {
         "img":'https://saravanandeveloper25.github.io/React-Project-1/images/azure.jpg',
-        "title":'Azure Certification Course ',
+        "title":'Azure Certification ',
         "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(14340)',
         "description":
@@ -79,7 +79,7 @@ const traingcourse= [
     },
     {
         "img":'https://saravanandeveloper25.github.io/React-Project-1/images/cybersecurity.jpg',
-        "title":'Cyber Security Course ',
+        "title":'Cyber Security  ',
         "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(11276)',
         "description":

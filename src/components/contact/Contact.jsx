@@ -12,7 +12,7 @@ function Contact() {
         console.log(value);
     };
     return (
-        <div style={{ marginTop: '5rem' }}>
+        <div style={{ }}>
             <section className='contact-banner'>
                 <div className='banner-content'>
                     <h1>Heading wit Heading</h1>
@@ -28,7 +28,6 @@ function Contact() {
                     </div>
                 </div>
             </section>
-            <section></section>
             <div className='getin-touch'>
                 <h1>Getin with You</h1>
                 <p>And you will Witness our Extraordinary Dedication to Digital Learning.</p>
@@ -181,8 +180,8 @@ function Contact() {
                                     }}
                                 />
                                 <div className="inp">
-                                <textarea name="message" id="message" ></textarea>
-                                <label htmlFor="message" id='la'>Your Message</label>
+                                    <textarea name="message" placeholder='' id="message" ></textarea>
+                                    <label htmlFor="message" id='la'>Your Message</label>
                                 </div>
 
                                 <input type="submit" value="Submit" />

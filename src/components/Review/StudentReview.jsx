@@ -1,6 +1,6 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import banner from '../../images/Review-page-banner.png';
-import { Container, Row, Form, Button,Col } from 'react-bootstrap';
+import { Container, Row, Form, Button, Col } from 'react-bootstrap';
 import ml from '../../images/man logo.png';
 import wl from '../../images/women logo.png';
 import './review.css'
@@ -9,8 +9,8 @@ const StudentReview = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
-  const [reviews, setReviews] = useState(stdreviews,() => {
+
+  const [reviews, setReviews] = useState(stdreviews, () => {
     const storedReviews = localStorage.getItem('reviews');
     return storedReviews ? JSON.parse(storedReviews) : [];
   });
@@ -21,7 +21,7 @@ const StudentReview = () => {
     review: '',
     rating: '', // default rating
     gender: 'male', // default gender
-    img:null
+    img: null
   });
 
   const handleInputChange = (e) => {
@@ -45,13 +45,13 @@ const StudentReview = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newReview = {
-      img:formData.img || (formData.gender === 'male' ? ml : wl),
+      img: formData.img || (formData.gender === 'male' ? ml : wl),
       name: formData.name,
       course: formData.course,
       review: formData.review,
       rating: formData.rating
     };
-   
+
     setReviews([...reviews, newReview]);
     // Reset form data after submission
     setFormData({
@@ -80,10 +80,10 @@ const StudentReview = () => {
   }, [reviews]);
 
   return (
-    <div style={{ marginTop: '4.7rem' }}>
+    <div style={{}}>
       <img src={banner} alt="" style={{ width: '100%' }} />
       <Container>
-        <section style={{ textAlign: 'center'}}>
+        <section style={{ textAlign: 'center' }}>
           <h2>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
@@ -94,112 +94,117 @@ const StudentReview = () => {
         </section>
         <Row>
           <Col xs={12} md={12} xl={8}>
-          {reviews.map((review, index) => (
-          <div key={index} className="review_card">
-            <Row>
-              <div className="review_card_top">
-                <div style={{ display: 'flex' }}>
-                  <img src={review.img} alt="" className="img" />
-                  <div>
-                    <h4 style={{margin:0}}>{review.name}</h4>
-                    <span>{review.course}</span>
-                    <p>{review.rating}</p>
+            {reviews.map((review, index) => (
+              <div key={index} className="review_card">
+                <Row>
+                  <div className="review_card_top">
+                    <div style={{ display: 'flex' }}>
+                      <img src={review.img} alt="" className="img" />
+                      <div>
+                        <h4 style={{ margin: 0 }}>{review.name}</h4>
+                        <span>{review.course}</span>
+                        <p>{review.rating}</p>
+                      </div>
+                    </div>
+
                   </div>
-                </div>
-                
+                </Row>
+                <Row>
+                  <p>{review.review}<p style={{ color: 'black', cursor: 'pointer', display: 'inline' }} onClick={() => handleDelete(index)}>.</p></p>
+                </Row>
               </div>
-            </Row>
-            <Row>
-              <p>{review.review}<p style={{color:'black',cursor:'pointer',display:'inline'}} onClick={() => handleDelete(index)}>.</p></p>
-            </Row>
-          </div>
-        ))}
+            ))}
           </Col>
-          <Col>
-          <Form onSubmit={handleSubmit} className='form'>
-            <h3>Post Your Reviews</h3>
-            <Form.Group controlId="name">
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter your name"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-              />
-            </Form.Group>
-            <Form.Group controlId="course">
-              <Form.Label>Course</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter your course"
-                name="course"
-                value={formData.course}
-                onChange={handleInputChange}
-                required
-              />
-            </Form.Group>
-            <Form.Group controlId="img">
-              <Form.Label>Upload image</Form.Label>
-              <Form.Control
+          <Col xs={12} xl={4}>
+            <form onSubmit={handleSubmit} className='review-form'>
+              <h3>Post Your Reviews</h3>
+              <div className='review-in'>
+                <input
+                  className='review-input'
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  id='name'
+                />
+                <label className="review-label" for='name'>Name</label>
+              </div>
+
+
+
+              <div className="review-in">
+                <input
+                  className='review-input'
+                  type="text"
+                  name="course"
+                  value={formData.course}
+                  onChange={handleInputChange}
+                  required
+                  id='course'
+                  placeholder=''
+                />
+                <label className="review-label-co" for='course'>Course</label>
+              </div>
+
+              <input
                 type="file"
                 placeholder="Enter your course"
                 name="img"
                 onChange={handleInputChange}
 
-                
+
               />
-            </Form.Group>
-            <Form.Group controlId="review">
-              <Form.Label>Review</Form.Label>
-              <Form.Control
-                as="textarea"
+
+              <div>
+              <teaxtaera
                 rows={3}
-                placeholder="Enter your review"
+                placeholder=""
                 name="review"
                 value={formData.review}
                 onChange={handleInputChange}
                 required
-              />
-            </Form.Group>
-            <Form.Group controlId="rating">
-              <Form.Label>Rating</Form.Label>
-              <Form.Control
-               as="select"
-                name="rating"
-                value={formData.rating}
-                onChange={handleInputChange}
-               
-              >
-              <option value="⭐️">⭐️</option>
-              <option value="⭐️⭐️">⭐️⭐️</option>
-              <option value="⭐️⭐️⭐️">⭐️⭐️⭐️</option>
-              <option value="⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️</option>
-              <option value="⭐️⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️⭐️</option>
-              </Form.Control>
+                className='ta'
+              ></teaxtaera>
+              </div>
+     
 
-            </Form.Group>
-            <Form.Group controlId="gender">
-              <Form.Label>Gender</Form.Label>
-              <Form.Control
-                as="select"
-                name="gender"
-                value={formData.gender}
-                onChange={handleInputChange}
-              >
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </Form.Control>
-            </Form.Group>
-            <Button variant="danger" type="post" className='mt-3'>
-              Submit
-            </Button>
-          </Form>
+              <Form.Group controlId="rating">
+                <Form.Control
+                  as="select"
+                  name="rating"
+                  value={formData.rating}
+                  onChange={handleInputChange}
+
+                >
+                  <option value="⭐️">⭐️</option>
+                  <option value="⭐️⭐️">⭐️⭐️</option>
+                  <option value="⭐️⭐️⭐️">⭐️⭐️⭐️</option>
+                  <option value="⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️</option>
+                  <option value="⭐️⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️⭐️</option>
+                </Form.Control>
+
+              </Form.Group>
+              <Form.Group controlId="gender">
+             
+                <Form.Control
+                  as="select"
+                  name="gender"
+                  value={formData.gender}
+                  onChange={handleInputChange}
+                >
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </Form.Control>
+              </Form.Group>
+              <Button variant="danger" type="post" className='mt-3'>
+                Submit
+              </Button>
+            </form>
           </Col>
-          
+
         </Row>
-      
+
 
       </Container>
     </div>

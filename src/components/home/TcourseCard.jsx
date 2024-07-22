@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col,Card} from 'react-bootstrap';
 import traingcourse from '../../data/traingcourse';
+import './home.css'
 
 
 const MyCard = () => {
@@ -12,10 +13,10 @@ const MyCard = () => {
     {traingcourse.map((course, index) => (
   <Col key={index} xs={12} md={6} >
     <Card className='Coursecard'>
-      <Card.Img variant="top" src={course.img} style={{height:"100px"}} />
+      <Card.Img variant="top" src={course.img} style={{height:"150px"}} className='card_img'/>
       <Card.Body>
-        <Card.Title >{course.title}</Card.Title>
-        <Card.Text style={{display:'flex',justifyContent:'space-around'}}>
+        <Card.Title >{course.title}<br></br>Course</Card.Title>
+        <Card.Text style={{display:'flex',justifyContent:'space-between'}}>
           <p>⭐️⭐️⭐️⭐️⭐️</p>
           <p >{course.review}</p>
         </Card.Text>
