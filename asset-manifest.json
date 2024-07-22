@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/React-Project-1/static/css/main.c96ad915.css",
-    "main.js": "/React-Project-1/static/js/main.5f3d32ae.js",
-    "static/media/studentbanner.jpg": "/React-Project-1/static/media/studentbanner.6e83843cd914025a99dd.jpg",
+    "main.css": "/React-Project-1/static/css/main.cd0f25d4.css",
+    "main.js": "/React-Project-1/static/js/main.24df888f.js",
     "static/media/11668340_20945203.jpg": "/React-Project-1/static/media/11668340_20945203.ba1a3dc96822d6fd3dbb.jpg",
     "static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.jpg": "/React-Project-1/static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.e3ce2565b10d65c059c3.jpg",
     "static/media/12291062_Wavy_Tech-20_Single-08.jpg": "/React-Project-1/static/media/12291062_Wavy_Tech-20_Single-08.216df2e1b843c4141b2b.jpg",
     "static/media/iot.jpg": "/React-Project-1/static/media/iot.b68e27c12f9d688edba9.jpg",
-    "static/media/home_banner_3.png": "/React-Project-1/static/media/home_banner_3.a869e16132849c6a848b.png",
+    "static/media/home-image.png": "/React-Project-1/static/media/home-image.d0439cea84ba46a8693a.png",
     "static/media/java fullstack.jpg": "/React-Project-1/static/media/java fullstack.200d9611a121dfb0b10b.jpg",
+    "static/media/studentbanner.jpg": "/React-Project-1/static/media/studentbanner.9ca6bc672fc563de431f.jpg",
     "static/media/32044575_7903569.jpg": "/React-Project-1/static/media/32044575_7903569.b560acc67c7fb168f998.jpg",
     "static/media/Review-page-banner.png": "/React-Project-1/static/media/Review-page-banner.f452e84fc60c1f1b6c44.png",
     "static/media/22896753_6670985.jpg": "/React-Project-1/static/media/22896753_6670985.fd0713c12c7d514bc4ff.jpg",
@@ -45,11 +45,11 @@
     "static/media/slick.ttf": "/React-Project-1/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/React-Project-1/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-Project-1/index.html",
-    "main.c96ad915.css.map": "/React-Project-1/static/css/main.c96ad915.css.map",
-    "main.5f3d32ae.js.map": "/React-Project-1/static/js/main.5f3d32ae.js.map"
+    "main.cd0f25d4.css.map": "/React-Project-1/static/css/main.cd0f25d4.css.map",
+    "main.24df888f.js.map": "/React-Project-1/static/js/main.24df888f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c96ad915.css",
-    "static/js/main.5f3d32ae.js"
+    "static/css/main.cd0f25d4.css",
+    "static/js/main.24df888f.js"
   ]
 }
