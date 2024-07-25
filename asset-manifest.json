@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Project-1/static/css/main.cd0f25d4.css",
-    "main.js": "/React-Project-1/static/js/main.24df888f.js",
+    "main.css": "/React-Project-1/static/css/main.6acd6532.css",
+    "main.js": "/React-Project-1/static/js/main.55a8ccf0.js",
     "static/media/11668340_20945203.jpg": "/React-Project-1/static/media/11668340_20945203.ba1a3dc96822d6fd3dbb.jpg",
     "static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.jpg": "/React-Project-1/static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.e3ce2565b10d65c059c3.jpg",
     "static/media/12291062_Wavy_Tech-20_Single-08.jpg": "/React-Project-1/static/media/12291062_Wavy_Tech-20_Single-08.216df2e1b843c4141b2b.jpg",
@@ -21,7 +21,6 @@
     "static/media/ZOHO-logo.png": "/React-Project-1/static/media/ZOHO-logo.e72077295393ec02f7ba.png",
     "static/media/9793159_4212150.jpg": "/React-Project-1/static/media/9793159_4212150.36bff438c20d9702c079.jpg",
     "static/media/contact-banner.png": "/React-Project-1/static/media/contact-banner.50925778d23171dba4f9.png",
-    "static/media/logo.png": "/React-Project-1/static/media/logo.c0c3b35ca27d4135f639.png",
     "static/media/404.png": "/React-Project-1/static/media/404.c2c61995f9677097bf24.png",
     "static/media/Cognizant-Logo.png": "/React-Project-1/static/media/Cognizant-Logo.a46dc0b88860264db7c2.png",
     "static/media/Samsung-logo.png": "/React-Project-1/static/media/Samsung-logo.0894131fe5d201da7c39.png",
@@ -45,11 +44,11 @@
     "static/media/slick.ttf": "/React-Project-1/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/React-Project-1/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-Project-1/index.html",
-    "main.cd0f25d4.css.map": "/React-Project-1/static/css/main.cd0f25d4.css.map",
-    "main.24df888f.js.map": "/React-Project-1/static/js/main.24df888f.js.map"
+    "main.6acd6532.css.map": "/React-Project-1/static/css/main.6acd6532.css.map",
+    "main.55a8ccf0.js.map": "/React-Project-1/static/js/main.55a8ccf0.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd0f25d4.css",
-    "static/js/main.24df888f.js"
+    "static/css/main.6acd6532.css",
+    "static/js/main.55a8ccf0.js"
   ]
 }
