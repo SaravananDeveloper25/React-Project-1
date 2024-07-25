@@ -17,7 +17,11 @@ import el from '../../images/Elucidation.png'
 import analaysis from '../../images/analysis.png'
 import ContactBanner from '../common/ContactBanner';
 import hi from '../../images/home-image.png'
-
+import el1 from '../../images/Ellipse 1.png'
+import el2 from '../../images/Ellipse 2.png'
+import el3 from '../../images/Ellipse 3.png'
+import el4 from '../../images/Ellipse 4.png'
+import el5 from '../../images/Frame 6.png'
 
 
 
@@ -29,21 +33,41 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='home-banner'>
+        <div style={{paddingTop:'2rem',paddingLeft:'4rem'}}>
         <Container>
-        <Row>
-          <Col xl={6}>
+        <Row id='banner-row'>
+          <Col xl={6} sm={12} md={6}>
           <div  className='home-content'>
           <h1>Lorem ipsum dolor sit amet.</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nobis voluptate sapiente repudiandae beatae et, eveniet nostrum quae! Placeat blanditiis numquam repellat magni quos veritatis non soluta eius ad consequatur.</p>
+          <div style={{display:'flex'}}>
+          <i class="fa-brands fa-instagram" id='i'></i>
+          <i class="fa-brands fa-youtube" id='i'></i>
+          <i class="fa-solid fa-x" id='i'></i>
+          <i class="fa-brands fa-facebook" id='i'></i>
+          </div>
+        
          </div>
           </Col>
-          <Col xl={6}>
+          <Col xl={6} sm={12} md={6}>
           <div className='home-image'>
           <img src={hi} alt=""  />
+          <div className='stdcount'>
+            <p>10k+ Students</p>
+            <div className='stdimg'>
+              <div className='img1'><img src={el1} alt="" /></div>
+              <div className='img2'><img src={el2} alt="" /></div>
+              <div className='img3'><img src={el3} alt="" /></div>
+              <div className='img4'><img src={el4} alt="" /></div>
+              <div className='img5'><img src={el5} alt="" /></div>
+            </div>
+          </div>
           </div>
           </Col>
         </Row>
         </Container>
+        </div>
+        
 
 
       </div>

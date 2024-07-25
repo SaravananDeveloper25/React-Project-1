@@ -10,6 +10,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Modal from 'react-modal';
 import Courses from '../Courses';
 import { Link, useNavigate } from 'react-router-dom';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 
 Modal.setAppElement('#root');
 
@@ -97,14 +98,9 @@ const Head = () => {
           <Navbar
             key={expand}
             expand={expand}
-            className="nav mb-3"
+            className="nav mb-3 header"
             style={{
               backgroundColor: nav ? '#121481' : 'transparent',
-              position: 'fixed',
-              top: 0,
-              width: '100%',
-              zIndex: 3,
-              height: '100px',
             }}
           >
             <Container>
@@ -118,12 +114,16 @@ const Head = () => {
                   setModalIsOpen(true);
                 }}
                 className="courseB"
-                style={{ color: 'white', border: '2px solid white', padding: '7px', borderRadius: '5px' }}
+                
               >
-                <i className="fa-solid fa-table" style={{ marginRight: '2px' }}></i>Course
+                <p><SchoolOutlinedIcon></SchoolOutlinedIcon></p><p>Course</p>
               </Nav.Link>
-              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={() => setOffcanvasShow(true)} />
-              <Navbar.Offcanvas
+              <button aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={() => setOffcanvasShow(true)} className='menu-btn' >
+                <div className='menu-button'></div>
+                <div className='menu-button'></div>
+                <div className='menu-button'></div>
+                </button> 
+                <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                 placement="end"
@@ -137,34 +137,25 @@ const Head = () => {
                 <Offcanvas.Body className="offcanvas-body-custom">
                   <Nav className="justify-content-start flex-grow-1 pe-3">
                     <Form className="d-flex mb-2">
-                      <Form.Control
-                        type="search"
-                        placeholder="Search"
-                        className="me-2"
-                        aria-label="Search"
-                        value={searchQuery}
-                        onChange={handleSearch}
-                        onKeyPress={handleKeyPress}
-                        id="search"
-                      />
-                      <Button onClick={executeSearch} variant="outline-danger" style={{ marginTop: '5px' }}>
-                        Search
-                      </Button>
+                      <div className='search'>
+                        <input type="search" name="" id="" placeholder='search' />
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                      </div>
+                        
                     </Form>
                   </Nav>
                   <Nav>
-                    <Nav.Link onClick={() => handleLinkClick('/allcourses')}>All Courses</Nav.Link>
-                    <Nav.Link onClick={() => handleLinkClick('/studentzone')}>Student Zone</Nav.Link>
-                    <Nav.Link>
-                      <Link to="/review" style={{ color: 'black', textDecoration: 'none' }} onClick={() => handleLinkClick('/review')}>
-                        Review
-                      </Link>
+                    <Nav.Link className='offcanva-link' onClick={() => handleLinkClick('/allcourses')}>All Courses<div className='line1'></div></Nav.Link>
+                    <Nav.Link className='offcanva-link' onClick={() => handleLinkClick('/studentzone')}>Student Zone<div className='line1'></div></Nav.Link>
+                    <Nav.Link className='offcanva-link' onClick={() => handleLinkClick('/review')}>
+                        Review<div className='line1'></div>
                     </Nav.Link>
-                    <a href="https://www.getintech.in/blog/" style={{ color: 'black', textDecoration: 'none', margin: '8px' }} target="_blank" rel="noopener noreferrer">
-                      Blog
+                    <a href="https://www.getintech.in/blog/" id='offcanva-link' target="_blank" rel="noopener noreferrer">
+                      Blog<div className='line1'></div>
                     </a>
-                    <Nav.Link style={{ color: 'black' }} onClick={() => handleLinkClick('/contact')}>
-                      Contact
+                    <Nav.Link className='offcanva-link'onClick={() => handleLinkClick('/contact')}>
+                      Contact<div className='line1'></div>
                     </Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
