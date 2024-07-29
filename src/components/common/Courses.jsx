@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import java from '../../images/java-logo.png';
 import python from '../../images/python.png';
 import c from '../../images/sharp-logo.png';
-import jfs from '../../images/java fullstack.jpg';
-import pfs from '../../images/python fullstack.jpg';
 import da from '../../images/icons8-data-analytics-64.png';
 import pb from '../../images/power-bi.png';
 import ta from '../../images/icons8-tableau-software-48.png';
@@ -49,6 +47,7 @@ import op from '../../images/22896753_6670985.jpg';
 import MATLAB from '../../images/icons8-matlab-48.png';
 import IoT from '../../images/iot.jpg';
 import es from '../../images/es.jpg';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const Courses = ({ setModalIsOpen }) => {
     const [toggle, setToggle] = useState(null);
@@ -65,64 +64,63 @@ const Courses = ({ setModalIsOpen }) => {
 
     return (
         <div className='courses'>
-            <hr />
             <div className='courseList'>
-                <p onClick={() => handleToggle('programming')}>Programming</p>
-                <p onClick={() => handleToggle('fullstack')}>Fullstack</p>
-                <p>Digital Marketing</p>
-                <p onClick={() => handleToggle('dataAnalytics')}>Data Analytics</p>
-                <p onClick={() => handleToggle('cloud')}>Cloud Computing</p>
-                <p onClick={() => handleToggle('ItSecurity')}>IT Security</p>
-                <p onClick={() => handleToggle('web')}>Web Development</p>
-                <p onClick={() => handleToggle('ui')}>UI/UX Designing</p>
-                <p onClick={() => handleToggle('dd')}>Database Development</p>
-                <p onClick={() => handleToggle('mobile')}>Mobile App Development</p>
-                <p onClick={() => handleToggle('st')}>Software Testing</p>
-                <p onClick={() => handleToggle('rpa')}>RPA</p>
-                <p onClick={() => handleToggle('Ml')}>Industry Automation</p>
+                <div onClick={() => handleToggle('programming')} className='p'><p>Programming</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></div>
+                <div onClick={() => handleToggle('fullstack')} className='p'><p>Fullstack</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></div>
+                <div className='p'><p>Digital Marketing</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></div>
+                <div onClick={() => handleToggle('dataAnalytics')} className='p'><p>Data Anyltics</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></div>
+                <div onClick={() => handleToggle('cloud')} className='p'><p>Cloud Computing</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></div>
+                <div onClick={() => handleToggle('ItSecurity')} className='p'><p>It Security</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></div>
+                <div onClick={() => handleToggle('web')} className='p'><p>Web Development</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></div>
+                <div onClick={() => handleToggle('ui')} className='p'><p>UI/UX Desining</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></div>
+                <div onClick={() => handleToggle('dd')} className='p'><p>Data Base Devolepment</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></div>
+                <div onClick={() => handleToggle('mobile')} className='p'><p>Mobile App Development</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></div>
+                <div onClick={() => handleToggle('st')} className='p'><p>Software testing</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></div>
+                <p onClick={() => handleToggle('rpa')} className='p'><p>RPA</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></p>
+                <p onClick={() => handleToggle('Ml')} className='p'><p>Industry Automation</p><p><KeyboardArrowRightIcon></KeyboardArrowRightIcon></p></p>
             </div>
             <div className='particularcourse'>
                 
                 {toggle === 'programming' && (
                     <div className='coursename'>
-                        <div onClick={() => handleLinkClick('/courses/java')}>
+                        <div onClick={() => handleLinkClick('/courses/java') } className="coursename-name">
                             <img src={java} alt="" />
-                            <p> Core Java</p>
+                            <p>Java</p>
                         </div>
-                        <div onClick={() => handleLinkClick('/courses/python')}>
+                        <div onClick={() => handleLinkClick('/courses/python')} className="coursename-name">
                             <img src={python} alt="" />
-                            <p>Core Python</p>
+                            <p>Python</p>
                         </div>                        
-                        <div onClick={() => handleLinkClick('/courses/Csharp')}>
+                        <div onClick={() => handleLinkClick('/courses/Csharp')} className="coursename-name">
                             <img src={c} alt="" />
-                            <p>C# (C Sharp)</p>
+                            <p>C Sharp</p>
                         </div>                      
                     </div>
                 )}
                 {toggle === 'fullstack' && (
                     <div className="coursename">
-                        <div>
-                            <img src={jfs} alt="" height={100} width={100}/>
-                            <p>Java Full stack</p>
+                        <div className="coursename-name">
+                            <img src={java} alt="" />
+                            <p style={{whiteSpace:'nowrap'}}>Java Fullstack</p>
                         </div>
-                        <div>
-                            <img src={pfs} alt="" height={100} width={100}/>
-                            <p>Python Full stack</p>
+                        <div className="coursename-name">
+                            <img src={python} alt="" />
+                            <p style={{whiteSpace:'nowrap',marginLeft:'10px'}}>Python Fullstack</p>
                         </div>
                         
                     </div>
                 )}
                 {toggle === 'dataAnalytics' && (
                     <div className='coursename'>
-                        <div>
+                        <div className="coursename-name">
                             <img src={da} alt="" />
                             <p>Data Analytics</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={pb} alt="" />
                             <p>PowerBI</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={ta} alt="" />
                             <p>Tableau</p>
                         </div>
@@ -132,47 +130,47 @@ const Courses = ({ setModalIsOpen }) => {
                 }
                 {toggle === 'cloud' && (
                     <div className="coursename">
-                        <div>
+                        <div className="coursename-name">
                             <img src={ad} alt="" />
                             <p>AWS DevOps</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={aws} alt="" />
                             <p>AWS</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={af} alt="" />
                             <p>azure fundamental</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={af} alt="" />
                             <p>Azure DevOps</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={k} alt="" />
                             <p>Kubernates</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={gc} alt="" />
                             <p>Google Cloud</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={dev} alt="" />
                             <p>DevOps</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={os} alt="" />
                             <p>OpenStack</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={sfa} alt="" />
                             <p>Salesforce Admin</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={sfd} alt="" />
                             <p>Salesforce Development</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={sfa} alt="" />
                             <p>Salesforce</p>
                         </div>
@@ -182,11 +180,11 @@ const Courses = ({ setModalIsOpen }) => {
                 )}
                 {toggle === 'ItSecurity' && (
                     <div className="coursename">
-                        <div>
+                        <div className="coursename-name">
                             <img src={cs} alt="" />
                             <p>cyber security</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={dsc} alt="" />
                             <p>DevSecOps</p>
                         </div>
@@ -194,27 +192,27 @@ const Courses = ({ setModalIsOpen }) => {
                 ) }
                 { toggle === 'web' && (
                     <div className="coursename">
-                        <div>
+                        <div className="coursename-name">
                             <img src={html} alt="" />
                             <p>HTML</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={css} alt="" />
                             <p style={{marginLeft:'1rem'}}>CSS</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={js} alt="" />
                             <p>Javascript</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={wp} alt="" />
                             <p>WordPress</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={re} alt="" />
                             <p>ReactJS</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={aj} alt="" />
                             <p>Angular JS</p>
                         </div>
@@ -222,15 +220,15 @@ const Courses = ({ setModalIsOpen }) => {
                 )}
                 {toggle === 'ui' && (
                     <div className="coursename">
-                        <div>
+                        <div className="coursename-name">
                             <img src={fi} alt="" />
                             <p>Figma</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={ax} alt="" />
                             <p>Adobe XD</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={ps} alt="" />
                             <p>Photoshop</p>
                         </div>
@@ -238,15 +236,15 @@ const Courses = ({ setModalIsOpen }) => {
                 )}
                 {toggle === 'dd' && (
                     <div className="coursename">
-                        <div>
+                        <div className="coursename-name">
                             <img src={od} alt="" />
                             <p>Oracle</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={md} alt="" />
                             <p>MongoDB</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={ms} alt="" />
                             <p>MYSQL</p>
                         </div>
@@ -254,27 +252,27 @@ const Courses = ({ setModalIsOpen }) => {
                 )}
                 {toggle === 'mobile' && (
                     <div className="coursename">
-                        <div>
+                        <div className="coursename-name">
                             <img src={fl} alt="" />
                             <p>Flutter</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={ic} alt="" />
                             <p>Ionic</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={ios} alt="" />
                             <p>iOS</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={and} alt="" />
                             <p>Android</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={xa} alt="" height={48} width={50}/>
                             <p>Xamarin</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={rn} alt="" />
                             <p>React Native</p>
                         </div>
@@ -282,19 +280,19 @@ const Courses = ({ setModalIsOpen }) => {
                 )}
                 {toggle === 'st' && (
                     <div className="coursename">
-                    <div>
+                    <div className="coursename-name">
                         <img src={sel} alt="" />
                         <p>Selenium</p>
                     </div>
-                    <div>
+                    <div className="coursename-name">
                         <img src={mt} alt="" height={48} width={50}/>
                         <p>Manual Testing</p>
                     </div>
-                    <div>
+                    <div className="coursename-name">
                         <img src={lr} alt="" height={48} width={50}/>
                         <p>LoadRunner</p>
                     </div>
-                    <div>
+                    <div className="coursename-name">
                         <img src={cy} alt="" height={48} width={50}/>
                         <p>Cypress</p>
                     </div>
@@ -304,23 +302,23 @@ const Courses = ({ setModalIsOpen }) => {
                 )}
                 {toggle === 'rpa' && (
                     <div className="coursename">
-                        <div>
+                        <div className="coursename-name">
                             <img src={uip} alt="" height={48} width={50} />
                             <p>UiPath</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={bp} alt="" height={48} width={50}/>
                             <p>BluePrism</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={aa} alt="" height={48} width={50}/>
                             <p>Automation Anywhere</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={wf} alt="" height={48} width={50}/>
                             <p>WorkFusion</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={op} alt="" height={48} width={50}/>
                             <p>OpenSpan</p>
                         </div>
@@ -328,15 +326,15 @@ const Courses = ({ setModalIsOpen }) => {
                 )}
                 {toggle === 'Ml' && (
                     <div className="coursename">
-                        <div>
+                        <div className="coursename-name">
                             <img src={MATLAB} alt="" />
                             <p>MATLAB</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={IoT} alt="" height={48} width={50}/>
                             <p>IoT + Python</p>
                         </div>
-                        <div>
+                        <div className="coursename-name">
                             <img src={es} alt="" height={48} width={50}/>
                             <p>Embedded Systems</p>
                         </div>

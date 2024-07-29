@@ -6,16 +6,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import {Modal} from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import Modal from 'react-modal';
+// import Modal from 'react-modal';
 import Courses from '../Courses';
 import { Link, useNavigate } from 'react-router-dom';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 
-Modal.setAppElement('#root');
+// Modal.setAppElement('#root');
 
 const Head = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const handleClose = () => setModalIsOpen(false);
+  const handleShow = () => setModalIsOpen(true);
   const [offcanvasShow, setOffcanvasShow] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [nav, setNav] = useState(false);
@@ -110,9 +113,7 @@ const Head = () => {
                 </Link>
               </Navbar.Brand>
               <Nav.Link
-                onClick={() => {
-                  setModalIsOpen(true);
-                }}
+                onClick={handleShow}
                 className="courseB"
                 
               >
@@ -166,17 +167,20 @@ const Head = () => {
       </header>
 
       <div>
-        <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className={'pop'}>
-          <Container>
-            <div className="up">
-              <p className="p">
-                <i className="fa-solid fa-x" style={{ margin: '5px' }} onClick={() => setModalIsOpen(false)}></i>
-              </p>
-              <h2>Courses</h2>
-              <Courses setModalIsOpen={setModalIsOpen} />
+        <Modal show={modalIsOpen} onHide={handleClose}>
+            <div className='courses-menu-head'>
+              <div style={{"flex":1}}></div>
+              <div className='course-menu-heading'>
+              <h1>Courses</h1>
+              <i className="fa-solid fa-x"  onClick={handleClose} style={{"fontSize":"30px"}}></i>
+              </div>
+
             </div>
-          </Container>
+            <div className='course-menu-bodu'>
+                <Courses setModalIsOpen={setModalIsOpen}/>
+              </div>
         </Modal>
+        
       </div>
     </>
   );
