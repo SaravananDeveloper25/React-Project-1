@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/React-Project-1/static/css/main.75ef5d2c.css",
-    "main.js": "/React-Project-1/static/js/main.a22ff0c5.js",
+    "main.css": "/React-Project-1/static/css/main.8de4533b.css",
+    "main.js": "/React-Project-1/static/js/main.bfea5a58.js",
     "static/media/11668340_20945203.jpg": "/React-Project-1/static/media/11668340_20945203.ba1a3dc96822d6fd3dbb.jpg",
     "static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.jpg": "/React-Project-1/static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.e3ce2565b10d65c059c3.jpg",
     "static/media/12291062_Wavy_Tech-20_Single-08.jpg": "/React-Project-1/static/media/12291062_Wavy_Tech-20_Single-08.216df2e1b843c4141b2b.jpg",
     "static/media/iot.jpg": "/React-Project-1/static/media/iot.b68e27c12f9d688edba9.jpg",
     "static/media/home-image.png": "/React-Project-1/static/media/home-image.d0439cea84ba46a8693a.png",
     "static/media/java fullstack.jpg": "/React-Project-1/static/media/java fullstack.200d9611a121dfb0b10b.jpg",
+    "static/media/Bbanner.jpg": "/React-Project-1/static/media/Bbanner.008ba7d93320955293da.jpg",
     "static/media/studentbanner.jpg": "/React-Project-1/static/media/studentbanner.9ca6bc672fc563de431f.jpg",
     "static/media/32044575_7903569.jpg": "/React-Project-1/static/media/32044575_7903569.b560acc67c7fb168f998.jpg",
     "static/media/Review-page-banner.png": "/React-Project-1/static/media/Review-page-banner.f452e84fc60c1f1b6c44.png",
@@ -17,37 +18,27 @@
     "static/media/analysis.png": "/React-Project-1/static/media/analysis.5a7ea2723afabc2ae983.png",
     "static/media/xamarin.jpg": "/React-Project-1/static/media/xamarin.10415744af63cfffdcf2.jpg",
     "static/media/es.jpg": "/React-Project-1/static/media/es.6cab905038975362e968.jpg",
-    "static/media/ZOHO-logo.png": "/React-Project-1/static/media/ZOHO-logo.e72077295393ec02f7ba.png",
     "static/media/9793159_4212150.jpg": "/React-Project-1/static/media/9793159_4212150.36bff438c20d9702c079.jpg",
     "static/media/contact-banner.png": "/React-Project-1/static/media/contact-banner.50925778d23171dba4f9.png",
     "static/media/404.png": "/React-Project-1/static/media/404.c2c61995f9677097bf24.png",
-    "static/media/Cognizant-Logo.png": "/React-Project-1/static/media/Cognizant-Logo.a46dc0b88860264db7c2.png",
-    "static/media/Samsung-logo.png": "/React-Project-1/static/media/Samsung-logo.0894131fe5d201da7c39.png",
-    "static/media/Infosys-logo.png": "/React-Project-1/static/media/Infosys-logo.b946c68050ddca93ff1b.png",
     "static/media/women logo.png": "/React-Project-1/static/media/women logo.9be9572a36ec46ac18d0.png",
     "static/media/Query Elaboration.png": "/React-Project-1/static/media/Query Elaboration.46418457a974a50f6341.png",
     "static/media/Score Analysis.png": "/React-Project-1/static/media/Score Analysis.b618ea29275fca72b593.png",
     "static/media/Elucidation.png": "/React-Project-1/static/media/Elucidation.9b78216fa255b1444d37.png",
     "static/media/Time Analysiss.png": "/React-Project-1/static/media/Time Analysiss.8562cddec686faa8b927.png",
-    "static/media/Dell-Logo.png": "/React-Project-1/static/media/Dell-Logo.e820828ee06256e8c2ef.png",
     "static/media/man logo.png": "/React-Project-1/static/media/man logo.91602993d8d38094e527.png",
     "static/media/Mockup Test.png": "/React-Project-1/static/media/Mockup Test.9ca6ea8f814723e8e282.png",
-    "static/media/Deloitte-logo.png": "/React-Project-1/static/media/Deloitte-logo.c5e94585c12722001ea4.png",
     "static/media/Assessment Queries.png": "/React-Project-1/static/media/Assessment Queries.ceae2bd90bbe5c8d6d46.png",
-    "static/media/IBM-Logo.png": "/React-Project-1/static/media/IBM-Logo.24da0af7c1d0011a3201.png",
-    "static/media/Capgimini-Logo.png": "/React-Project-1/static/media/Capgimini-Logo.ab2016e0413fd7bc68e0.png",
-    "static/media/HCL-Logo.png": "/React-Project-1/static/media/HCL-Logo.7d68335badecd79b8ca0.png",
-    "static/media/LTI-logo.png": "/React-Project-1/static/media/LTI-logo.9dd2c0d1be44c1d837b3.png",
     "static/media/slick.svg": "/React-Project-1/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/React-Project-1/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/React-Project-1/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/React-Project-1/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-Project-1/index.html",
-    "main.75ef5d2c.css.map": "/React-Project-1/static/css/main.75ef5d2c.css.map",
-    "main.a22ff0c5.js.map": "/React-Project-1/static/js/main.a22ff0c5.js.map"
+    "main.8de4533b.css.map": "/React-Project-1/static/css/main.8de4533b.css.map",
+    "main.bfea5a58.js.map": "/React-Project-1/static/js/main.bfea5a58.js.map"
   },
   "entrypoints": [
-    "static/css/main.75ef5d2c.css",
-    "static/js/main.a22ff0c5.js"
+    "static/css/main.8de4533b.css",
+    "static/js/main.bfea5a58.js"
   ]
 }
