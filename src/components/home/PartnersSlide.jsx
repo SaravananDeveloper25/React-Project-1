@@ -22,30 +22,30 @@ const PartnersSlide = () => {
       <div >
         <div className='logos'>
           <div className="logo-slide">
-            <img src={inf} alt="" />
-            <img src={zo} alt="" />
-            <img src={cap} alt="" />
-            <img src={lti} alt="" />
-            <img src={sam} alt="" />
-            <img src={dxc} alt="" />
-            <img src={de} alt="" />
-            <img src={hcl} alt="" />
-            <img src={cog} alt="" />
-            <img src={dell} alt="" />
-            <img src={ibm} alt="" />
+            <img src={inf} alt="Infosys-logo" />
+            <img src={zo} alt="ZOHO-logo" />
+            <img src={cap} alt="Capgimini-Logo" />
+            <img src={lti} alt="LTI-logo" />
+            <img src={sam} alt="Samsung" />
+            <img src={dxc} alt="DXC-Logo" />
+            <img src={de} alt="Deloitte-logo" />
+            <img src={hcl} alt="HCL-Logo" />
+            <img src={cog} alt="Cognizant-Logo" />
+            <img src={dell} alt="Dell-Logo" />
+            <img src={ibm} alt="IBM-Logo" />
           </div>
           <div className="logo-slide">
-          <img src={inf} alt="" />
-            <img src={zo} alt="" />
-            <img src={cap} alt="" />
-            <img src={lti} alt="" />
-            <img src={sam} alt="" />
-            <img src={dxc} alt="" />
-            <img src={de} alt="" />
-            <img src={hcl} alt="" />
-            <img src={cog} alt="" />
-            <img src={dell} alt="" />
-            <img src={ibm} alt="" />
+            <img src={inf} alt="Infosys-logo" />
+            <img src={zo} alt="ZOHO-logo" />
+            <img src={cap} alt="Capgimini-Logo" />
+            <img src={lti} alt="LTI-logo" />
+            <img src={sam} alt="Samsung" />
+            <img src={dxc} alt="DXC-Logo" />
+            <img src={de} alt="Deloitte-logo" />
+            <img src={hcl} alt="HCL-Logo" />
+            <img src={cog} alt="Cognizant-Logo" />
+            <img src={dell} alt="Dell-Logo" />
+            <img src={ibm} alt="IBM-Logo" />
           </div>
         </div>
 

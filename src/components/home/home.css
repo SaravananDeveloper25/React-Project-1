@@ -3,23 +3,27 @@
    height: 100vh;
    background: linear-gradient(265.25deg, #121481 1.78%, #BA56B7 77.55%, #FF71CD 98.28%);
    width: 100%;
-   background-size: cover;
-   background-repeat: no-repeat;
    opacity: 90%;
    backdrop-filter: blur(100px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .home-image{
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 3rem;
    position: relative;
 }
 .home-content{
+   display: flex;
+   /* align-items: center; */
+   justify-content: center;
+   flex-direction: column;
    height: 500px;
    width: 500px;
-   margin-top: 7rem;
+
    color: #fff;
 }
 .home-image>img{
@@ -31,8 +35,8 @@ position: absolute;
 width: 179px;
 height:80px;
 bottom: 5px;
-left: 5px;
-transform: translate(50px,-50px);
+left: 50%;
+transform: translate(-120%,-70%);
 padding: 10px 20px 10px 20px;
 display: flex;
 flex-direction: column;
@@ -84,23 +88,15 @@ background-color: #fff;
    z-index: 2;
 }
 #i{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin: 10px;
-   width: 30px;
-   height: 30px;
-   color:rgb(69, 7, 80);
-   border: 2px solid;
-   border-radius: 50%;
-   cursor: pointer;
-   transition: .5s all;
+ background-color: red;
+ border: none;
+ padding: 10px 20px 10px 20px;
+ border-radius: 10px;
+ transition: .5s all;
 }
 #i:hover{
-   background-color: #ce75c8;
-   box-shadow: #ce75c8 0px 0px 2px 2px;
-   transform: translateY(-10px);
+   background: #BE0202;
+   color: #fff;
 }
 .trending_courses{
     text-align: center;
@@ -109,6 +105,51 @@ background-color: #fff;
  .trending_courses span{
      font-weight: 700;
      border-bottom:4px solid red;
+ }
+ .Tbtn{
+   margin-top:2rem;
+   text-align:center;
+   padding:10px;
+   background:red;
+   border-radius:10px;
+   border: none;
+   font-weight: 700;
+   color: #fff;
+ }
+ .Tbtn:hover{
+   background-color: #BE0202;
+ }
+ .Bbanner{
+   width: 100%;
+   height: 500px;
+   background-size: cover;
+   background-color: #000000;
+   position: relative;
+ }
+ .Bbanner img{
+   height: 100%;
+   width: 100%;
+   opacity: 0.5;
+ }
+ .B-Content{
+   position: absolute;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-20%);
+   color: #fff;
+ }
+ .B-Content>button{
+   background: none;
+   padding: 10px 20px;
+   border: #fff solid;
+   color: #fff;
+   font-size: 16px;
+   border-radius: 10px;
+ }
+ .B-Content>button:hover{
+   background-color: #fff;
+   color: #000000;
  }
  .our_services{
      text-align: center;
@@ -145,6 +186,14 @@ background-color: #fff;
      position: relative;
      text-align: left;
      padding: 10px;
+     width: 265px;
+     height: 250px;
+     border-radius: 20px;
+     box-shadow: 0 4px 4px 0 #00000040;
+ }
+ .card_img{
+   height: 150px;
+   border-radius: 10px;
  }
  .content{
      display: none;
@@ -154,20 +203,29 @@ background-color: #fff;
      width: 100%;
      height: 100%;
      background-color: rgba(0, 0, 0, 0.733);
-     padding: 25px;
+     padding: 40px 25px 25px;
      color: white;
-     border-radius: 5px;
+     border-radius: 20px;
   
  }
+.content-details{
+   font-size: 70%;
+
+}
 
  .contentB{
-   background-color: #ffffff00;
    text-align: center;
-   border: 2px solid #fff;
+   border: 2px solid #ff0000;
    padding: 5px;
-   border-radius: 5px;
+   border-radius: 10px;
    cursor: pointer;
    margin-bottom:2px;
+   color: red;
+   font-weight: 700;
+ }
+ .contentB:hover{
+   background-color: red;
+   color:white;
  }
  .Coursecard:hover .content{
      display: block;
@@ -176,16 +234,10 @@ background-color: #fff;
  .service-card{
    border:none;
    box-shadow:0px 4px 6px  rgba(0, 0, 0, 0.1);
-   height:300px;
    background: #fff;
    text-align:center;
-   transition: 1s all;
-   backdrop-filter: blur(50px);
-   background: rgba(132, 133, 184, 0.3);
- }
- .service-card:hover{
-   background: rgba(255, 255, 255, 0.3);
-  
+   padding: 30px, 20px, 30px, 20px;
+   height: 328px;
  }
  .contact_banner{
     text-decoration: none;
@@ -227,7 +279,7 @@ background-color: #fff;
    white-space: nowrap;
    position: relative;
  }
- .logos:before,
+ /* .logos:before,
  .logos:after {
    position: absolute;
    top: 0;
@@ -236,8 +288,8 @@ background-color: #fff;
    content: "";
    z-index: 2;
  }
- 
- .logos:before {
+  */
+ /* .logos:before {
    left: 0;
    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(219, 222, 249));
  }
@@ -245,19 +297,18 @@ background-color: #fff;
  .logos:after {
    right: 0;
    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(219, 222, 249));
- }
+ } */
  .logos:hover .logo-slide{
    animation-play-state: paused;
  }
  .logo-slide{
    display: inline-block;
-   animation: slide 20s infinite linear;
+   animation: slide 10s infinite linear;
   
  }
  .logo-slide img{
-   height: 100px;
-   margin: 0 40px;
-   aspect-ratio: 16/9;
+   height: 50px;
+   margin: 0 25px;
  }
  @keyframes slide {
    from{
@@ -267,6 +318,11 @@ background-color: #fff;
       transform: translateX(-100%);
    }
  }
+@media (min-width:1281px) {
+   .home-banner{
+      height: 80vh;
+   }
+}
  @media (max-width:950px) {
    .home-banner{
       height: 50vh;
@@ -304,7 +360,7 @@ background-color: #fff;
       background-size: cover;  
       
    } */
-   .Coursecard{
+   /* .Coursecard{
       display: flex;
       flex-direction: row;
       height: 150px;
@@ -315,7 +371,7 @@ background-color: #fff;
   }
   .Coursecard:hover .content{
       display: none;
-  }
+  } */
   .our_services{
       display: none;
   }
@@ -354,16 +410,8 @@ background-color: #fff;
     }
  }
  @media (max-width:450px){
-   .Coursecard{
-      display: flex;
-      flex-direction: row;
-      height: 150px;
-      justify-content: center;
-  }
-   .card_img{
-      height: 100px !important;
-      margin-top: 10px;
-      
+   .cardrow{
+     transform: translateX(10%);
    }
    .home-banner{
       background-size:contain;
@@ -373,12 +421,16 @@ background-color: #fff;
     
    }
    .home-content{
-      /* margin-left: 20px; */
-      /* height: 300px;
+      height: 300px;
       width: 300px;
-      margin-top: 7rem;
+      /* margin-top: 7rem; */
       color: #fff;
-      margin:20px 40px 10px 40px; */
+      margin:30px 40px 10px 40px;
+      text-align: left;
+
+   }
+   .m-home{
+      padding-left: 0 !important;
    }
    .home-image{
       /* height: 300px;

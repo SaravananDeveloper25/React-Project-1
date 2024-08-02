@@ -101,11 +101,11 @@ const Courses = ({ setModalIsOpen }) => {
                     <div className="coursename">
                         <div className="coursename-name">
                             <img src={java} alt="" />
-                            <p style={{whiteSpace:'nowrap'}}>Java Fullstack</p>
+                            <p style={{whiteSpace:'wrap'}}>Java <br/>Fullstack</p>
                         </div>
                         <div className="coursename-name">
                             <img src={python} alt="" />
-                            <p style={{whiteSpace:'nowrap',marginLeft:'10px'}}>Python Fullstack</p>
+                            <p >Python Fullstack</p>
                         </div>
                         
                     </div>

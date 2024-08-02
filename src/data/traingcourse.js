@@ -57,7 +57,7 @@ const traingcourse= [
     },
     {
         "img":'https://saravanandeveloper25.github.io/React-Project-1/images/aws.jpg',
-        "title":'Amazon Web Services',
+        "title":'AWS',
         "star":'https://saravanandeveloper25.github.io/React-Project-1/images/star.jpg',
         'review':'5(12000)',
         "description":

@@ -133,11 +133,11 @@ const Head = () => {
                 className="offcanvas-custom" // Apply custom class
               >
                 <Offcanvas.Header closeButton className="offcanvas-header-custom">
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>Menu</Offcanvas.Title>
+                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}><h1 style={{font:'36px',margin:0}}>Menu</h1></Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body className="offcanvas-body-custom">
-                  <Nav className="justify-content-start flex-grow-1 pe-3">
-                    <Form className="d-flex mb-2">
+                  <Nav className="search-nav">
+                    <Form className="search-form mb-2">
                       <div className='search'>
                         <input type="search" name="" id="" placeholder='search' />
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -147,6 +147,7 @@ const Head = () => {
                     </Form>
                   </Nav>
                   <Nav>
+                  <Nav.Link className='offcanva-link home' onClick={() => handleLinkClick('/')}>Home<div className='line1'></div></Nav.Link>
                     <Nav.Link className='offcanva-link' onClick={() => handleLinkClick('/allcourses')}>All Courses<div className='line1'></div></Nav.Link>
                     <Nav.Link className='offcanva-link' onClick={() => handleLinkClick('/studentzone')}>Student Zone<div className='line1'></div></Nav.Link>
                     <Nav.Link className='offcanva-link' onClick={() => handleLinkClick('/review')}>
@@ -171,7 +172,10 @@ const Head = () => {
             <div className='courses-menu-head'>
               <div style={{"flex":1}}></div>
               <div className='course-menu-heading'>
-              <h1>Courses</h1>
+              <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
+                <h1>Courses</h1>
+                <div style={{height:'5px',width:'104px',background:"#FF71CD",borderRadius:'10px'}}></div>
+              </div>
               <i className="fa-solid fa-x"  onClick={handleClose} style={{"fontSize":"30px"}}></i>
               </div>
 

@@ -22,7 +22,7 @@ import el2 from '../../images/Ellipse 2.png'
 import el3 from '../../images/Ellipse 3.png'
 import el4 from '../../images/Ellipse 4.png'
 import el5 from '../../images/Frame 6.png'
-
+import bbanner from '../../images/Bbanner.jpg'
 
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='home-banner'>
-        <div style={{paddingTop:'2rem',paddingLeft:'4rem'}}>
+        <div style={{paddingTop:'2rem',paddingLeft:'4rem'}} className='m-home'>
         <Container>
         <Row id='banner-row'>
           <Col xl={6} sm={12} md={6}>
@@ -41,10 +41,7 @@ const Home = () => {
           <h1>Lorem ipsum dolor sit amet.</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nobis voluptate sapiente repudiandae beatae et, eveniet nostrum quae! Placeat blanditiis numquam repellat magni quos veritatis non soluta eius ad consequatur.</p>
           <div style={{display:'flex'}}>
-          <i class="fa-brands fa-instagram" id='i'></i>
-          <i class="fa-brands fa-youtube" id='i'></i>
-          <i class="fa-solid fa-x" id='i'></i>
-          <i class="fa-brands fa-facebook" id='i'></i>
+          <button id='i'>Button</button>
           </div>
         
          </div>
@@ -76,6 +73,18 @@ const Home = () => {
             <span>TRENDING COURSE</span>
              <MyCard />    
        </section>
+       
+       </Container>
+       <section className='Bbanner'>
+
+              <img src={bbanner} alt="" />
+              <div className='B-Content'>
+                  <h2>Find the right learning path for you</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci accusantium eum dolores nostrum voluptas tempore. Dolorum ut suscipit possimus recusandae ipsam praesentium debitis tempore neque perferendis! Deleniti possimus quidem quisquam?</p>
+                  <button>Lorem.us</button>
+              </div>
+       </section>
+       <Container>
        <section className='our_services'>
            <span>OUR SERVICES</span>
            <ServiceCard />
@@ -84,6 +93,7 @@ const Home = () => {
         <span>PLACEMENT PROCESS</span>
             <Placement />
        </section>
+
 
        </Container>
        <section className='placement_partners'>

@@ -9,27 +9,33 @@ const MyCard = () => {
     <>
         <section></section>
     <Container>
-    <Row xs={1} md={2} xl={4} className='g-4'>
+    <Row xs={1} md={2} xl={4} className='g-4 cardrow'>
     {traingcourse.map((course, index) => (
   <Col key={index} xs={12} md={6} >
     <Card className='Coursecard'>
-      <Card.Img variant="top" src={course.img} style={{height:"150px"}} className='card_img'/>
+      <Card.Img variant="top" src={course.img} className='card_img'/>
       <Card.Body>
-        <Card.Title >{course.title}<br></br>Course</Card.Title>
+        <p style={{marginBottom:'10px',fontWeight:700}}>{course.title}</p>
         <Card.Text style={{display:'flex',justifyContent:'space-between'}}>
           <p>⭐️⭐️⭐️⭐️⭐️</p>
           <p >{course.review}</p>
         </Card.Text>
       </Card.Body>
       <div className="content">
-        <p>{course.title}</p>
-        <hr />
+        <div className='content-details'>
+        <div>
+        <h6>{course.title}</h6>
+        <div style={{background:'red',height:'5px',width:'50px',borderRadius:'10px'}}></div>
+        </div>
+        
         <ul>
           <li>{course.description.l1}</li>
           <li>{course.description.l2}</li>
           <li>{course.description.l3}</li>
         </ul>
-        <p className='contentB'>View More Details</p>
+        <p className='contentB'>View More</p>
+        </div>
+
       </div>
     </Card>
   </Col>
@@ -37,6 +43,7 @@ const MyCard = () => {
 
 
     </Row>
+    <div ><button className='Tbtn' >View All Courses</button></div>
   </Container>
     </>
     
