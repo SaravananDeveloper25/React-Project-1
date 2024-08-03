@@ -22,7 +22,7 @@ import el2 from '../../images/Ellipse 2.png'
 import el3 from '../../images/Ellipse 3.png'
 import el4 from '../../images/Ellipse 4.png'
 import el5 from '../../images/Frame 6.png'
-import bbanner from '../../images/Bbanner.jpg'
+import bbanner from '../../images/Bbanner.png'
 
 
 const Home = () => {
@@ -37,7 +37,7 @@ const Home = () => {
         <Container>
         <Row id='banner-row'>
           <Col xl={6} sm={12} md={6}>
-          <div  className='home-content'>
+          <div className='home-content'>
           <h1>Lorem ipsum dolor sit amet.</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nobis voluptate sapiente repudiandae beatae et, eveniet nostrum quae! Placeat blanditiis numquam repellat magni quos veritatis non soluta eius ad consequatur.</p>
           <div style={{display:'flex'}}>

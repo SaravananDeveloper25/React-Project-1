@@ -12,7 +12,7 @@ const MyCard = () => {
     <Row xs={1} md={2} xl={4} className='g-4 cardrow'>
     {traingcourse.map((course, index) => (
   <Col key={index} xs={12} md={6} >
-    <Card className='Coursecard'>
+    <Card className={traingcourse[4]===course?'hidden-card':'Coursecard'}>
       <Card.Img variant="top" src={course.img} className='card_img'/>
       <Card.Body>
         <p style={{marginBottom:'10px',fontWeight:700}}>{course.title}</p>
