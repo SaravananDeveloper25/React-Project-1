@@ -23,6 +23,9 @@ import el3 from '../../images/Ellipse 3.png'
 import el4 from '../../images/Ellipse 4.png'
 import el5 from '../../images/Frame 6.png'
 import bbanner from '../../images/Bbanner.png'
+import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import instructorimage from '../../images/instructor-image.png'
 
 
 const Home = () => {
@@ -42,6 +45,7 @@ const Home = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nobis voluptate sapiente repudiandae beatae et, eveniet nostrum quae! Placeat blanditiis numquam repellat magni quos veritatis non soluta eius ad consequatur.</p>
           <div style={{display:'flex'}}>
           <button id='i'>Button</button>
+          <div className='playbtn'><PlayArrowOutlinedIcon className='bf-btn'></PlayArrowOutlinedIcon><PlayArrowIcon className='af-btn' style={{display:'none'}}></PlayArrowIcon></div>
           </div>
         
          </div>
@@ -70,7 +74,7 @@ const Home = () => {
       </div>
        <Container >
        <section className='trending_courses'>
-            <span>TRENDING COURSE</span>
+            <h5>TRAINING COURSE</h5>
              <MyCard />    
        </section>
        
@@ -102,55 +106,28 @@ const Home = () => {
        </section>
        <section className='cbanner'></section>
         <ContactBanner />
-        <section className='Self-assessment-Evaluation'>
-          <span>Self-assessment Evaluation</span>
-          <div>
-            <section></section>
-            <p>Explore your strengths, identify areas for improvement, and chart your path to success with Getin Technologies' Self-assessment Evaluation, an essential tool for shaping your career trajectory in the ever-evolving world of software training and placement.</p>
-          </div>
-          <Container>
-          <Row xs={1} md={2} xl={2} className='g-4'>
-            <Col xs={12} md={6}>
-                <Row>
-                  <Col>
-                  <img src={aq} alt="" height={100} width={100} />
-                  <p>Assessment Queries</p>
-                  </Col>
-                  <Col>
-                  <img src={mt} alt="" height={100} width={100}/>
-                  <p>Mockup Test</p>
-                  </Col>
-                  <Col>
-                  <img src={ta} alt="" height={100} width={100}/>
-                  <p>Time Analysiss</p>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col>
-                  <img src={sa} alt="" height={100} width={100}/>
-                  <p>Score Analysis</p>
-                  </Col>
-                  <Col>
-                  <img src={qa} alt="" height={100} width={100}/>
-                  <p>Query Elaboration</p>
-                  </Col>
-                  <Col>
-                  <img src={el} alt="" height={100} width={100}/>
-                  <p>Elucidation</p>
-                  </Col>
-                </Row>
+        <section className='instructor'>
 
-            </Col>
-            <Col xs={12} md={6}>
-              <div>
-              <img src={analaysis} alt="" style={{width:'400px'}} id='hide' />
-              </div>
-            </Col>
-          </Row>
-          </Container>
-         
-          
-          
+          <div className='instructor-container'>
+            <div className='instructor-content'>
+            <h3>Become a Instructor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore velit nam totam mollitia iusto quisquam quos ut quo consectetur pariatur, tempore, repellat officia sint, minus nisi quasi. Provident, omnis laboriosam.</p>
+            </div>
+            <div>
+              <h3>Enjoy Many Perks</h3>
+              <ul>
+                <li>lorem1</li>
+                <li>lorem1</li>
+                <li>lorem1</li>
+              </ul>
+            </div>
+            <div className='instructor-img'>
+              <img src={instructorimage} alt="" />
+          </div>
+          </div>
+ 
+
+
         </section>
         <section className='Review'>
           <h3><span>Getin Technologies Students Reviews</span></h3>

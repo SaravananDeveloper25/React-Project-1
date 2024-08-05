@@ -103,7 +103,7 @@ const Head = () => {
             expand={expand}
             className="nav mb-3 header"
             style={{
-              backgroundColor: nav ? '#121481' : 'transparent',
+              backgroundColor: nav ? '#fff' : 'transparent',
             }}
           >
             <Container>
@@ -114,8 +114,7 @@ const Head = () => {
               </Navbar.Brand>
               <Nav.Link
                 onClick={handleShow}
-                className="courseB"
-                
+                className={nav?"courseC":"courseB"}
               >
                 <p><SchoolOutlinedIcon></SchoolOutlinedIcon></p><p>Course</p>
               </Nav.Link>
@@ -138,7 +137,7 @@ const Head = () => {
                 <Offcanvas.Body className="offcanvas-body-custom">
                   <Nav className="search-nav">
                     <Form className="search-form mb-2">
-                      <div className='search'>
+                      <div className={nav?'gray-border':'search'}>
                         <input type="search" name="" id="" placeholder='search' />
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
 

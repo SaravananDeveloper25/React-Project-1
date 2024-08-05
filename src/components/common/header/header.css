@@ -96,6 +96,26 @@ nav ul li:hover{
     height: 50px;
     transition: 2s all;
 }
+.courseC{
+    border: 2px solid   #121481 !important;
+    margin-right:5px !important;
+    margin-bottom:5px !important;
+    padding:13px !important;
+    color: white !important;
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    border-radius:13px ;
+    width: 139.82px;
+    height: 50px;
+    transition: 2s all;
+}
+.courseC:hover{
+    background-color: #121481;
+}.courseC:hover p{
+    /* background-color: #fff; */
+    color: rgb(255, 255, 255);
+}
 .courseB:hover p{
     /* background-color: #fff; */
     color: black;
@@ -105,6 +125,11 @@ nav ul li:hover{
 .courseB p{
     margin: 0;
     font-weight: bold;
+}
+.courseC p{
+    margin: 0;
+    font-weight: bold;
+    color: #121481;
 }
 .courses-menu-head{
     display: flex;
@@ -147,9 +172,27 @@ nav ul li:hover{
     justify-content: space-around;
     color: gray;
     opacity: .8;
-    padding: 0 10px;
+    padding: 0 10px  ;
+}
+.gray-border{
+    margin:0 5px;
+    background-color: #fff;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-around;
+    color: gray;
+    opacity: .8;
+    padding: 0 10px  ;
+    border: 1px solid gray;
 }
 .search>input[type="search"]{
+    border: none;
+    width: 150px;
+}
+.gray-border>input[type="search"]{
     border: none;
     width: 150px;
 }
@@ -166,7 +209,10 @@ input[type="search"] {
     all: unset;
     opacity: .8;
 }
-
+.gray-border>button{
+    all: unset;
+    opacity: .8;
+}
 
 .courses{
    display: flex;

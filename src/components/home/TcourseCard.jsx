@@ -11,8 +11,8 @@ const MyCard = () => {
     <Container>
     <Row xs={1} md={2} xl={4} className='g-4 cardrow'>
     {traingcourse.map((course, index) => (
-  <Col key={index} xs={12} md={6} >
-    <Card className={traingcourse[4]===course?'hidden-card':'Coursecard'}>
+  <Col key={index} xs={12} md={6} className={[4, 5, 6, 7].includes(index) ?"hidden-col":"c"}>
+<Card className={[4, 5, 6, 7].includes(index) ? 'hidden-card' : 'Coursecard'}>
       <Card.Img variant="top" src={course.img} className='card_img'/>
       <Card.Body>
         <p style={{marginBottom:'10px',fontWeight:700}}>{course.title}</p>
