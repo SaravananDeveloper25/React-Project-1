@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='home-banner'>
-        <div style={{paddingTop:'2rem',paddingLeft:'4rem'}} className='m-home'>
+        <div style={{paddingLeft:'4rem'}} className='m-home t-home'>
         <Container>
         <Row id='banner-row'>
           <Col xl={6} sm={12} md={6}>
@@ -107,24 +107,33 @@ const Home = () => {
        <section className='cbanner'></section>
         <ContactBanner />
         <section className='instructor'>
-
-          <div className='instructor-container'>
-            <div className='instructor-content'>
-            <h3>Become a Instructor</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore velit nam totam mollitia iusto quisquam quos ut quo consectetur pariatur, tempore, repellat officia sint, minus nisi quasi. Provident, omnis laboriosam.</p>
-            </div>
-            <div>
-              <h3>Enjoy Many Perks</h3>
-              <ul>
-                <li>lorem1</li>
-                <li>lorem1</li>
-                <li>lorem1</li>
-              </ul>
-            </div>
-            <div className='instructor-img'>
-              <img src={instructorimage} alt="" />
-          </div>
-          </div>
+          <Container>
+            <Row>
+              <Col className='instrctor-box1'>
+              <div >
+                <div>
+                  <h4>Become a Instructor</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem velit fuga nihil amet, reiciendis illum fugiat optio necessitatibus cum numquam facilis repellat! Fugiat, cumque provident natus maxime explicabo perspiciatis! Omnis!</p>
+                </div>
+                <div>
+                  <h5>Enjoy Many Perks</h5>
+                  <ul>
+                    <li>Lorem.</li>
+                    <li>Lorem.</li>
+                    <li>Lorem.</li>
+                  </ul>
+                </div>
+                <div className='instrctor-btn'>
+                  <button>Beacome a Instrctor</button>
+                </div>
+              </div>
+              </Col>
+              <Col className='instrctor-box2'>
+              <img src={instructorimage} alt="" height={'500px'}/>
+              </Col>
+            </Row>
+          </Container>
+          
  
 
 
@@ -134,9 +143,9 @@ const Home = () => {
           <Container>
            <section></section>
 
-            <div style={{marginTop:'180px',marginBottom:'180px'}}>
+
               <Review />
-            </div>
+
             <button style={{width:'200px',padding:'10px',backgroundColor:'red',border:'none',borderRadius:'10px'}}>More Reviews</button>
 
           </Container>

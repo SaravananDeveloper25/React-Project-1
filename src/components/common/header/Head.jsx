@@ -80,7 +80,7 @@ const Head = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY > 500) {
         setNav(true);
       } else {
         setNav(false);

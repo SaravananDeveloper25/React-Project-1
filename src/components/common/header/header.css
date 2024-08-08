@@ -7,6 +7,7 @@
     /* display: flex;
     align-items: center;
     justify-content: center; */
+    font-family: 'Poppins','Times New Roman', Times, serif;
  }
  .logo{
     height: 75px;
@@ -314,6 +315,9 @@ input[type="search"] {
 }
 
 @media (max-width:1050px){
+    .courseB{
+       display: none !important;
+    }
     .logo{
         height: 50px;
         width: 80px;
@@ -321,6 +325,7 @@ input[type="search"] {
     .nav{
         margin: 0;
         font-size: 70%;
+        text-align: center;
     }
     .particularcourse{
 
@@ -358,6 +363,9 @@ input[type="search"] {
         /* margin-left:7rem ;
         margin-top: .5rem; */
         /* display: none; */
+        visibility: hidden;
+    }
+    .courseC{
         visibility: hidden;
     }
     .up{
