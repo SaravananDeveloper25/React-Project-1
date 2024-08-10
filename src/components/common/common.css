@@ -3,20 +3,23 @@
    height: 400px;
    background: linear-gradient(90deg, #121481 0%, #4446E4 101.25%);
    display: grid;
-   grid-template-columns: 2fr 1fr;
-   grid-template-rows: 1fr;
+   grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
    align-items: center;
    padding: 0 10%;
    column-gap: 40px;
  }
  .contactBannerbox1{
    color: #fff;
-
+   white-space: wrap;
+ }
+ .contactBanner-line{
+   display: none;
  }
  .contactBannerbox2{
    color: #fff;
    display: grid;
    row-gap: 50px;
+   justify-content: center;
  }
  .contactBannerbox2 div>a{
    background-color: #fff;
@@ -25,6 +28,23 @@
    padding: 10px;
    border-radius: 10px;
    font-weight: 600;
+ }
+.contactBannerbox2 div>a:hover{
+   background-color: #25D366;
+   color: #fff;
+ }
+
+ .whats{
+   background:#575AE8;
+   color:white;
+   border:none;
+   border-radius:50%;
+   margin-right:10px;
+
+ }
+ .contactBannerbox2 div>a:hover  .whats{
+   background-color: #25D366;
+   color: #fff;
  }
  .contact_banner a{
     text-decoration:none;
@@ -152,10 +172,30 @@
     
  }
  @media (max-width:450px){
-   .contact_banner{
-      min-height:280px ;
-     }
-   
+   .contactBanner{
+      height: 300px;
+   }
+   .contactBannerbox1{
+      width: 350px;
+    }
+    .contactBanner-line{
+      display: block;
+      width: 200px;
+      height: 2px;
+      background-color: #fff;
+      margin-left: 76px;
+      margin-top: 20px;
+    }
+    .contactBannerbox2{
+      display: flex;
+      justify-content: left;
+      width: 350px;
+      font-size: 90%;
+      gap: 20px;
+    }
+    .contactBannerbox2>p{
+      margin-top: 0 !important;
+    }
       .Content_box2{
          display:flex;
          flex-direction: row;

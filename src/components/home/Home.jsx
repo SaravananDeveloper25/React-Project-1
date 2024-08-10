@@ -74,7 +74,10 @@ const Home = () => {
       </div>
        <Container >
        <section className='trending_courses'>
-            <h5>TRAINING COURSE</h5>
+            <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <h4>TRAINING COURSE</h4>
+            <div style={{width:'100px',height:'3px',background:'red',borderRadius:'10px'}}></div>
+            </div>
              <MyCard />    
        </section>
        
@@ -90,18 +93,24 @@ const Home = () => {
        </section>
        <Container>
        <section className='our_services'>
-           <span>OUR SERVICES</span>
+       <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <h4>OUR SERVICES</h4>
+            <div style={{width:'100px',height:'3px',background:'red',borderRadius:'10px'}}></div>
+            </div>
            <ServiceCard />
        </section>
        <section className='placent_process'>
-        <span>PLACEMENT PROCESS</span>
+       <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <h4>PLACEMENT PROCESS</h4>
+            <div style={{width:'100px',height:'3px',background:'red',borderRadius:'10px'}}></div>
+            </div>
             <Placement />
        </section>
 
 
        </Container>
        <section className='placement_partners'>
-          <span>OUR PLACEMENT PARTNERS</span>
+
           <PartnersSlide />
        </section>
        <section className='cbanner'></section>
@@ -139,14 +148,15 @@ const Home = () => {
 
         </section>
         <section className='Review'>
-          <h3><span>Getin Technologies Students Reviews</span></h3>
+        <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <h4>Review</h4>
+            <div style={{width:'100px',height:'3px',background:'red',borderRadius:'10px'}}></div>
+            </div>
           <Container>
            <section></section>
 
 
               <Review />
-
-            <button style={{width:'200px',padding:'10px',backgroundColor:'red',border:'none',borderRadius:'10px'}}>More Reviews</button>
 
           </Container>
         </section>

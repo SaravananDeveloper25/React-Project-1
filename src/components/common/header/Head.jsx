@@ -80,7 +80,7 @@ const Head = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {
+      if (window.scrollY > 300) {
         setNav(true);
       } else {
         setNav(false);
@@ -119,9 +119,9 @@ const Head = () => {
                 <p><SchoolOutlinedIcon></SchoolOutlinedIcon></p><p>Course</p>
               </Nav.Link>
               <button aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={() => setOffcanvasShow(true)} className='menu-btn' >
-                <div className='menu-button'></div>
-                <div className='menu-button'></div>
-                <div className='menu-button'></div>
+                <div className={nav?'menu-button-dark':'menu-button'}></div>
+                <div className={nav?'menu-button-dark':'menu-button'}></div>
+                <div className={nav?'menu-button-dark':'menu-button'}></div>
                 </button> 
                 <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}

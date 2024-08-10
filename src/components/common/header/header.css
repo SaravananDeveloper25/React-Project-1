@@ -296,6 +296,14 @@ input[type="search"] {
     all:unset;
     display: none;
 }
+.menu-button-dark{
+    background-color: #000000;
+    height: 5px;
+    width: 50px;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+}
 .menu-button{
     background-color: #ffffff;
     height: 5px;
