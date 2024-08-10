@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Project-1/static/css/main.238d315c.css",
-    "main.js": "/React-Project-1/static/js/main.8cafab48.js",
+    "main.css": "/React-Project-1/static/css/main.c67e9e19.css",
+    "main.js": "/React-Project-1/static/js/main.d52b00a2.js",
     "static/media/11668340_20945203.jpg": "/React-Project-1/static/media/11668340_20945203.ba1a3dc96822d6fd3dbb.jpg",
     "static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.jpg": "/React-Project-1/static/media/16717151_2002.i039.010_chatbot_messenger_ai_isometric_set-09.e3ce2565b10d65c059c3.jpg",
     "static/media/12291062_Wavy_Tech-20_Single-08.jpg": "/React-Project-1/static/media/12291062_Wavy_Tech-20_Single-08.216df2e1b843c4141b2b.jpg",
@@ -14,7 +14,7 @@
     "static/media/Review-page-banner.png": "/React-Project-1/static/media/Review-page-banner.f452e84fc60c1f1b6c44.png",
     "static/media/22896753_6670985.jpg": "/React-Project-1/static/media/22896753_6670985.fd0713c12c7d514bc4ff.jpg",
     "static/media/144645513_10165951.jpg": "/React-Project-1/static/media/144645513_10165951.f335883e3c04db759a0f.jpg",
-    "static/media/instructor-image.png": "/React-Project-1/static/media/instructor-image.91ba1a1322a00dd8ad78.png",
+    "static/media/instructor-image.png": "/React-Project-1/static/media/instructor-image.487722b7758756e600de.png",
     "static/media/22379570_6610138.jpg": "/React-Project-1/static/media/22379570_6610138.e480a53afe50120b3e7f.jpg",
     "static/media/analysis.png": "/React-Project-1/static/media/analysis.5a7ea2723afabc2ae983.png",
     "static/media/xamarin.jpg": "/React-Project-1/static/media/xamarin.10415744af63cfffdcf2.jpg",
@@ -43,11 +43,11 @@
     "static/media/slick.ttf": "/React-Project-1/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/React-Project-1/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-Project-1/index.html",
-    "main.238d315c.css.map": "/React-Project-1/static/css/main.238d315c.css.map",
-    "main.8cafab48.js.map": "/React-Project-1/static/js/main.8cafab48.js.map"
+    "main.c67e9e19.css.map": "/React-Project-1/static/css/main.c67e9e19.css.map",
+    "main.d52b00a2.js.map": "/React-Project-1/static/js/main.d52b00a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.238d315c.css",
-    "static/js/main.8cafab48.js"
+    "static/css/main.c67e9e19.css",
+    "static/js/main.d52b00a2.js"
   ]
 }
