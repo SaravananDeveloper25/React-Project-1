@@ -4,7 +4,7 @@
 }
 .home-banner{
    height: 100vh;
-   background: linear-gradient(265.25deg, #121481 1.78%, #BA56B7 77.55%, #FF71CD 98.28%);
+   background: linear-gradient(to left, #121481 1.78%, #BA56B7 77.55%, #FF71CD 98.28%);
    width: 100%;
    opacity: 90%;
    backdrop-filter: blur(100px);
@@ -545,6 +545,15 @@ backdrop-filter: blur(10px);
       margin-left: 20px;
       margin-right: 10px;
    }
+   .nav-button.prev {
+      left: 5%;
+      top: 35%;
+    }
+    
+    .nav-button.next {
+      right: 5%;
+      top: 35%;
+    }
  }
  @media (max-width:650px) {
    /* .home-banner{
@@ -607,7 +616,8 @@ backdrop-filter: blur(10px);
    .home-banner{
       background-size:contain;
       height: 100vh;
- 
+      background: linear-gradient(to top, #121481 1.78%, #BA56B7 77.55%, #FF71CD 98.28%);
+
       /* margin-top: 6rem; */
     
    }
@@ -690,5 +700,13 @@ backdrop-filter: blur(10px);
 .coverflow-item{
    width: 300px !important;
 }
-
+.review-box {
+   width: 310px;
+   padding: 20px;
+   background: #fff;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   border-radius: 30px;
+   font-size: 16px ;
+  
+ }
  }

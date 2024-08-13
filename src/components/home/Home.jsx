@@ -26,7 +26,7 @@ import bbanner from '../../images/Bbanner.png'
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import instructorimage from '../../images/instructor-image.png'
-
+import HomeHead from './HomeHead'
 
 const Home = () => {
   useEffect(() => {
@@ -35,6 +35,7 @@ const Home = () => {
  
   return (
     <div className='home'>
+      <HomeHead />
       <div className='home-banner'>
         <div style={{paddingLeft:'4rem'}} className='m-home t-home'>
         <Container>

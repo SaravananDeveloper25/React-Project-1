@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../../images/logo.png'; // Adjust the path accordingly
-import './header.css';
+import logo from '../../images/logo.png'; // Adjust the path accordingly
+import '../../components/common/header/header.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,13 +9,13 @@ import Button from 'react-bootstrap/Button';
 import {Modal} from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 // import Modal from 'react-modal';
-import Courses from '../Courses';
+import Courses from '../../components/common/Courses';
 import { Link, useNavigate } from 'react-router-dom';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 
 // Modal.setAppElement('#root');
 
-const Head = () => {
+const HomeHead = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const handleClose = () => setModalIsOpen(false);
   const handleShow = () => setModalIsOpen(true);
@@ -103,7 +103,7 @@ const Head = () => {
             expand={expand}
             className="nav mb-3 header"
             style={{
-              backgroundColor:'#fff' ,
+              backgroundColor: nav ? '#fff' : 'transparent',
             }}
           >
             <Container>
@@ -114,7 +114,7 @@ const Head = () => {
               </Navbar.Brand>
               <Nav.Link
                 onClick={handleShow}
-                className={"courseC"}
+                className={nav?"courseC":"courseB"}
               >
                 <p><SchoolOutlinedIcon></SchoolOutlinedIcon></p><p>Course</p>
               </Nav.Link>
@@ -137,7 +137,7 @@ const Head = () => {
                 <Offcanvas.Body className="offcanvas-body-custom">
                   <Nav className="search-nav">
                     <Form className="search-form mb-2">
-                      <div className='gray-border'>
+                      <div className={nav?'gray-border':'search'}>
                         <input type="search" name="" id="" placeholder='search' />
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
 
@@ -189,4 +189,4 @@ const Head = () => {
   );
 };
 
-export default Head;
+export default HomeHead;
