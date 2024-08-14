@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgetin_bengaluru=self.webpackChunkgetin_bengaluru||[]).push([[315],{6529:(e,t,n)=>{n.r(t),n.d(t,{default:()=>a});n(5043);const i=n.p+"static/media/404.c2c61995f9677097bf24.png";var s=n(579);const a=()=>(0,s.jsx)("div",{style:{marginTop:"5rem",display:"flex",justifyContent:"center",alignItems:"center",height:"80vh"},children:(0,s.jsx)("img",{src:i,alt:"",height:"500px",width:"500px"})})}}]);
+//# sourceMappingURL=315.fe8e4cd6.chunk.js.map
