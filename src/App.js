@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy  } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Head from './components/common/header/Head';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import './App.css';
-import Home from './components/home/Home';
-import Java from './components/Courses/java/Java';
-import Python from './components/Courses/python/python';
-import Csharp from './components/Courses/Csharp/Csharp';
-import StudentReview from './components/Review/StudentReview';
-import Footer from './components/common/footer/Footer';
-import NotFound from './components/common/NotFound';
-import StudentZone from './components/StudentZone/StudentZone';
-import AllCoursesPage from './components/common/AllCoursesPage';
-import Contact from './components/contact/Contact';
+const Home = lazy(() => import('./components/home/Home'));
+const Java = lazy(() => import('./components/Courses/java/Java'));
+const Python = lazy(() => import('./components/Courses/python/python'));
+const Csharp = lazy(() => import('./components/Courses/Csharp/Csharp'));
+const StudentReview = lazy(() => import('./components/Review/StudentReview'));
+const AllCoursesPage = lazy(() => import('./components/common/AllCoursesPage'));
+const StudentZone = lazy(() => import('./components/StudentZone/StudentZone'));
+const Contact = lazy(() => import('./components/contact/Contact'));
+const Footer = lazy(() => import('./components/common/footer/Footer'));
+const NotFound = lazy(() => import('./components/common/NotFound'));
 
 const AppContent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,14 +26,25 @@ const AppContent = () => {
         setIsVisible(false);
       }
     };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup function to remove event listener
+  
+    const debounceScroll = debounce(handleScroll, 100); // Debounce with 100ms delay
+    window.addEventListener('scroll', debounceScroll);
+  
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', debounceScroll);
     };
-  }, []); // Empty dependency array ensures this effect only runs once after initial render
+  }, []);
+  
+  const debounce = (func, delay) => {
+    let timeout;
+    return (...args) => {
+      if (timeout) clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        func(...args);
+      }, delay);
+    };
+  };
+  // Empty dependency array ensures this effect only runs once after initial render
   
   const scrollToTop = () => {
     window.scrollTo({
@@ -44,6 +55,8 @@ const AppContent = () => {
 
   return (
     <>
+        <Suspense fallback={<div>Loading...</div>}>
+
       {location.pathname !== '/'  && <Head />} {/* Render Head only on the home route */}
       
       <Routes>
@@ -67,6 +80,7 @@ const AppContent = () => {
         <i className="fa-solid fa-angle-up"></i>
       </button>
       <Footer />
+      </Suspense>
     </>
   );
 };
