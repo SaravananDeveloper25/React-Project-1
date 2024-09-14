@@ -77,10 +77,12 @@
  /*All Courses*/
  .all-course-box1{
   background-color: #121481;
-  border-radius: 10px;
+  border-radius: 30px;
   height: 700px;
   width: 300px;
-
+  position: sticky;
+  top: 7rem;
+  box-shadow: 0 4px 4px 0 #00000040;
  }
  .course-box1-links{
    padding: 36px 50px 36px 50px;
@@ -116,7 +118,7 @@
 
 }
 .all-course-box2{
-  margin-left: 20px;
+  margin:0 0 20px 20px;
   background-color: #fff;
   padding: 20px;
   height: 240px;
@@ -124,6 +126,9 @@
   border-radius: 30px;
   box-shadow: 0 4px 4px 0 #00000040;
   display: flex;
+}
+.all-course-box2:hover{
+  background-color: #12148114;
 }
 .course-box2-img{
   height: 200px;
@@ -159,12 +164,20 @@
   border-radius: 35px;
   padding: 8px 20px 8px 20px;
 }
+.buttn1:hover{
+  background-color: #BE0202;
+  color: #CFCFCF;
+}
 .buttn2{
   padding: 8px 20px 8px 20px;
   color: red;
   border: 2px solid red;
   border-radius: 35px;
   background: transparent;
+}
+.buttn2:hover{
+  background-color: red;
+  color: #fff;
 }
  @media (max-width:950px) {
    .contact_banner{

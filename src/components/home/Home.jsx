@@ -35,7 +35,7 @@ const Home = () => {
  
   return (
     <div className='home'>
-      <HomeHead />
+     
       <div className='home-banner'>
         <div style={{paddingLeft:'4rem'}} className='m-home t-home'>
         <Container>

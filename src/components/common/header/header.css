@@ -190,12 +190,18 @@ nav ul li:hover{
     border: 1px solid gray;
 }
 .search>input[type="search"]{
-    border: none;
+    border: none !important;
     width: 150px;
 }
+.search>input[type="search"]:focus{
+    outline: none;
+}
 .gray-border>input[type="search"]{
-    border: none;
+    border: none !important;
     width: 150px;
+}
+.gray-border>input[type="search"]:focus{
+    outline: none;
 }
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;

@@ -1,4 +1,82 @@
+.stubanner{
+    background: linear-gradient(180deg, #121481 70%, #04041B 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 
+    color: #fff;
+}
+.stubanner-box{
+    display: flex;
+    margin-left: 20px;
+}
+.stubanner-content{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 2;
+}
+.stubanner-img{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+}
+.stubanner-img img{
+    height: 90%;
+}
+.red-btn{
+    border: none;
+    padding:10px 20px;
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+    width: 100px;
+}
+.resumehead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.resumehead div{
+    height: 5px;
+    width: 100px;
+    background-color: red;
+    border-radius: 10px;
+}
+.stubanner-content p{
+    width: 400px;
+}
+.pet{
+    height: 100vh;
+}
+.petbox{
+    display: flex;
+    align-items: center;
+}
+.placement-list{
+    background-color: #121481;
+    height: 100vh;
+}
+
+.placehead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding-top:2rem ;
+}
+.placehead div{
+    height: 5px;
+    width: 100px;
+    background-color: red;
+    border-radius: 10px;
+    
+}
+/* 
 *{
     margin: 0;
     padding: 0;
@@ -87,13 +165,13 @@
 .placed-students{
     text-align: left;
 }
-/* .placed-students p{
+.placed-students p{
     text-indent: 20px;
-} */
+}
 .placed-students img {
     width: 100%;
     height: auto;
-    max-width: 300px; /* Adjust this value as needed */
+    max-width: 300px;
     margin: 0 auto;
   }
   .pcontainer{
@@ -173,4 +251,4 @@
         display: none;
     }
 
-}
+} */

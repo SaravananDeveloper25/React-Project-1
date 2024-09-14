@@ -1,7 +1,8 @@
 import React, { useState, useEffect, Suspense, lazy  } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Head from './components/common/header/Head';
+import HomeHead from './components/home/HomeHead';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import StudentZone from './components/StudentZone/StudentZone';
 import './App.css';
 const Home = lazy(() => import('./components/home/Home'));
 const Java = lazy(() => import('./components/Courses/java/Java'));
@@ -9,7 +10,7 @@ const Python = lazy(() => import('./components/Courses/python/python'));
 const Csharp = lazy(() => import('./components/Courses/Csharp/Csharp'));
 const StudentReview = lazy(() => import('./components/Review/StudentReview'));
 const AllCoursesPage = lazy(() => import('./components/common/AllCoursesPage'));
-const StudentZone = lazy(() => import('./components/StudentZone/StudentZone'));
+
 const Contact = lazy(() => import('./components/contact/Contact'));
 const Footer = lazy(() => import('./components/common/footer/Footer'));
 const NotFound = lazy(() => import('./components/common/NotFound'));
@@ -57,7 +58,7 @@ const AppContent = () => {
     <>
         <Suspense fallback={<div>Loading...</div>}>
 
-      {location.pathname !== '/'  && <Head />} {/* Render Head only on the home route */}
+      {location.pathname !== '/allcourse'  &&  <HomeHead />} {/* Render Head only on the home route */}
       
       <Routes>
         <Route path='/' element={<Home />} />

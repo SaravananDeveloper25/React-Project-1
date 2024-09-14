@@ -3,13 +3,16 @@ import './common.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import allcourses from '../../data/allcourses';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ja from '../../images/java-icon.png'
+import Head from './header/Head'
+
 
 function AllCoursesPage() {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
     return (
+      <>
+        <Head/>
         <div style={{marginTop:'7rem'}}>
           
           <Container>
@@ -20,7 +23,7 @@ function AllCoursesPage() {
                       <div className='course-box1-links'>
                         <div style={{display:'flex',alignItems:'center',flexDirection:'column'}}>
                         <h3>Categories</h3>
-                        <div style={{background:'red',height:'5px',width:'50px'}}></div>
+                        <div style={{background:'red',height:'5px',width:'50px',borderRadius:'10px'}}></div>
                         </div> 
                         <div className='course-box1-link'>
                         <p className="box-link"><ArrowForwardIcon className="link-icon" />Programming</p>
@@ -32,34 +35,38 @@ function AllCoursesPage() {
                     </div>
                 </Col>
                 <Col xl={8}>
-                <div className='all-course-box2'>
-                  <div className='course-box2-img'>
-                    <img src={ja} alt="" />
-                  </div>
-                  <div className='course-box2-content'>
-                    <div className='box2-content-de'>
-                      <h3>Course Name</h3>
-                      <div style={{background:'#121481',width:'45px',height:'25px',fontSize:'12px',padding:'2px 4px',color:'#fff',fontWeight:600,borderRadius:'5px'}}>
-                      <p>⭐️ 4.5</p>
-                      </div>
-                      <p style={{fontSize:'14px',margin:'10px 0 0 0'}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse distinctio, praesentium deleniti reiciendis quos libero asperiores quasi? Neque expedita cupiditate laborum quasi, optio dignissimos dolore id, placeat, repellendus necessitatibus officiis?</p>
-                    </div>
-                    <div className='box2-content-price'>
-                      <h3 style={{color:'#121481'}}>₹xx,xxx</h3>
-                      <h6 style={{textDecorationLine:'line-through',color:'#121481',opacity:.5}}>₹xx,xxx</h6>
-                      <div className='content-price-btn'>
-                      <button className='buttn1'>Book Now</button>
-                      <button className='buttn2'>View More</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                {allcourses.map((course)=>{
+                   return <div className='all-course-box2' key={course.coursename}>
+                   <div className='course-box2-img'>
+                     <img src={course.img} alt="" />
+                   </div>
+                   <div className='course-box2-content'>
+                     <div className='box2-content-de'>
+                       <h3>{course.coursename}</h3>
+                       <div style={{background:'#121481',width:'45px',height:'25px',fontSize:'12px',padding:'2px 4px',color:'#fff',fontWeight:600,borderRadius:'5px'}}>
+                       <p>⭐️ {course.reviews}</p>
+                       </div>
+                       <p style={{fontSize:'14px',margin:'10px 0 0 0'}}>{course.para}</p>
+                     </div>
+                     <div className='box2-content-price'>
+                       <h3 style={{color:'#121481'}}>₹ {course.New_price}</h3>
+                       <h6 style={{textDecorationLine:'line-through',color:'#121481',opacity:.5}}>₹ {course.old_price}</h6>
+                       <div className='content-price-btn'>
+                       <button className='buttn1'>Book Now</button>
+                       <button className='buttn2'>View More</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                })}
                 </Col>
             </Row>
           </div>
            
           </Container>
         </div>
+      </>
+      
     );
 }
 

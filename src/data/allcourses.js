@@ -1,34 +1,48 @@
-import java from '../images/java fullstack.jpg';
+
+import ja from '../images/java-icon.png'
 
 const allcourses = [
     {
-        "img": java,
+        "img": ja,
         "coursename": 'Java Fullstack',
-        "headname": 'Learn Java Fullstack Development',
-        "para": "loremloremloremloremloremloremloremloremloremloremloremloremlorem",
-        "reviews": 1234,
+        "New_price": '25000',
+        "old_price": '30000',
+        "para": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse distinctio, praesentium deleniti reiciendis quos libero asperiores quasi? Neque expedita cupiditate laborum quasi, optio dignissimos dolore id, placeat, repellendus necessitatibus officiis?",
+        "reviews": 4.5,
     },
     {
-        "img": java,
+        "img": ja,
         "coursename": 'Java Fullstack',
-        "headname": 'Master Java Fullstack Skills',
-        "para": "loremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
-        "reviews": 1234,
+        "New_price": '25000',
+        "old_price": '30000',
+        "para": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse distinctio, praesentium deleniti reiciendis quos libero asperiores quasi? Neque expedita cupiditate laborum quasi, optio dignissimos dolore id, placeat, repellendus necessitatibus officiis?",
+        "reviews": 4.5,
     },
     {
-        "img": java,
+        "img": ja,
         "coursename": 'Java Fullstack',
-        "headname": 'Java Fullstack Bootcamp',
-        "para": "loremloremloremloremloremloremloremloremloremloremloremloremloremlo",
-        "reviews": 1234,
+        "New_price": '25000',
+        "old_price": '30000',
+        "para": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse distinctio, praesentium deleniti reiciendis quos libero asperiores quasi? Neque expedita cupiditate laborum quasi, optio dignissimos dolore id, placeat, repellendus necessitatibus officiis?",
+        "reviews": 4.5,
     },
     {
-        "img": java,
+        "img": ja,
         "coursename": 'Java Fullstack',
-        "headname": 'Advanced Java Fullstack Course',
-        "para": "loremloremloremloremloremloremloremloremloremloremloremloremloremloremlored",
-        "reviews": 1234,
+        "New_price": '25000',
+        "old_price": '30000',
+        "para": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse distinctio, praesentium deleniti reiciendis quos libero asperiores quasi? Neque expedita cupiditate laborum quasi, optio dignissimos dolore id, placeat, repellendus necessitatibus officiis?",
+        "reviews": 4.5,
     },
+    {
+        "img": ja,
+        "coursename": 'Java Fullstack',
+        "New_price": '25000',
+        "old_price": '30000',
+        "para": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse distinctio, praesentium deleniti reiciendis quos libero asperiores quasi? Neque expedita cupiditate laborum quasi, optio dignissimos dolore id, placeat, repellendus necessitatibus officiis?",
+        "reviews": 4.5,
+    },
+   
 ];
 
 export default allcourses;
