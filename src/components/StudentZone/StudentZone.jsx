@@ -9,6 +9,33 @@ import resume3 from '../../images/resume 3.png'
 import resume4  from '../../images/resume 4.png'
 
 function StudentZone() {
+  const placement=[
+    {
+      pcount:'1000+',
+      pcore:'Non-IT'
+    },
+    {
+      pcount:'1000+',
+      pcore:'Non-IT'
+    },
+    {
+      pcount:'1000+',
+      pcore:'Non-IT'
+    },
+    {
+      pcount:'1000+',
+      pcore:'Non-IT'
+    },
+    {
+      pcount:'1000+',
+      pcore:'Non-IT'
+    },
+    {
+      pcount:'1000+',
+      pcore:'Non-IT'
+    }
+
+  ]
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -62,7 +89,7 @@ function StudentZone() {
             return(
               <Col key={index} className='text-center'>
                 <img src={val} alt="" />
-                <div style={{display:'flex',justifyContent:'center',marginTop:'1rem'}}>
+                <div style={{marginTop:'1rem'}}>
                 <button className='red-btn'>view</button>
                 </div>
               </Col>
@@ -73,9 +100,9 @@ function StudentZone() {
         <Row>
           {resume_img.map((val,index)=>{
             return(
-              <Col key={index}>
+              <Col key={index} className='text-center'>
                 <img src={val} alt="" />
-                <div style={{display:'flex',justifyContent:'center',marginTop:'1rem'}}>
+                <div style={{marginTop:'1rem'}}>
                 <button className='red-btn'>view</button>
                 </div>
               </Col>
@@ -95,10 +122,17 @@ function StudentZone() {
             <div></div>
             </div>
       
-            <p style={{padding:'50px 250px',color:'white',fontSize:'20px'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fuga placeat deserunt cum aliquam earum cupiditate facilis, excepturi veniam dolor pariatur quo delectus nemo, nostrum maiores quis voluptatibus. Minus, sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis explicabo quaerat quibusdam asperiores distinctio, sit facere delectus ullam impedit dolore, pariatur suscipit fuga obcaecati, ipsam incidunt velit. Odio, fugit eius.</p>
+            <p style={{padding:'50px 200px',color:'white',fontSize:'20px'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fuga placeat deserunt cum aliquam earum cupiditate facilis, excepturi veniam dolor pariatur quo delectus nemo, nostrum maiores quis voluptatibus. Minus, sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis explicabo quaerat quibusdam asperiores distinctio, sit facere delectus ullam impedit dolore, pariatur suscipit fuga obcaecati, ipsam incidunt velit. Odio, fugit eius.</p>
             <section></section>
             <div className='placed-count'>
-              
+              {
+                placement.map((place,index)=>{
+                  return <div className='placed-count-box'>
+                    <h3><strong>{place.pcount}</strong></h3>
+                    <p>{place.pcore}</p>
+                  </div>
+                })
+              }
             </div>
             </div>
           </Container>
