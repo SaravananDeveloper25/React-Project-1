@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Project-1/static/css/main.d36ee8c7.css",
-    "main.js": "/React-Project-1/static/js/main.bf6c37bb.js",
+    "main.css": "/React-Project-1/static/css/main.9d29c660.css",
+    "main.js": "/React-Project-1/static/js/main.112705f2.js",
     "static/css/969.3f06e026.chunk.css": "/React-Project-1/static/css/969.3f06e026.chunk.css",
     "static/js/969.92699bce.chunk.js": "/React-Project-1/static/js/969.92699bce.chunk.js",
     "static/js/858.e5b5f74c.chunk.js": "/React-Project-1/static/js/858.e5b5f74c.chunk.js",
@@ -15,7 +15,7 @@
     "static/js/727.c591ccd9.chunk.js": "/React-Project-1/static/js/727.c591ccd9.chunk.js",
     "static/css/252.efd3680e.chunk.css": "/React-Project-1/static/css/252.efd3680e.chunk.css",
     "static/js/252.e3aa38b4.chunk.js": "/React-Project-1/static/js/252.e3aa38b4.chunk.js",
-    "static/css/853.c43a576a.chunk.css": "/React-Project-1/static/css/853.c43a576a.chunk.css",
+    "static/css/853.2ca9d487.chunk.css": "/React-Project-1/static/css/853.2ca9d487.chunk.css",
     "static/js/853.c4250ca9.chunk.js": "/React-Project-1/static/js/853.c4250ca9.chunk.js",
     "static/js/315.fe8e4cd6.chunk.js": "/React-Project-1/static/js/315.fe8e4cd6.chunk.js",
     "static/js/483.271886aa.chunk.js": "/React-Project-1/static/js/483.271886aa.chunk.js",
@@ -35,10 +35,10 @@
     "static/media/22379570_6610138.jpg": "/React-Project-1/static/media/22379570_6610138.e480a53afe50120b3e7f.jpg",
     "static/media/analysis.png": "/React-Project-1/static/media/analysis.5a7ea2723afabc2ae983.png",
     "static/media/studentbannerimg.png": "/React-Project-1/static/media/studentbannerimg.98baf4211b145a6b733b.png",
+    "static/media/petimg.png": "/React-Project-1/static/media/petimg.f51d1445450dfbdf3164.png",
     "static/media/xamarin.jpg": "/React-Project-1/static/media/xamarin.10415744af63cfffdcf2.jpg",
     "static/media/es.jpg": "/React-Project-1/static/media/es.6cab905038975362e968.jpg",
     "static/media/ZOHO-logo.png": "/React-Project-1/static/media/ZOHO-logo.4db72b1e0337f3fcee4d.png",
-    "static/media/petimg.png": "/React-Project-1/static/media/petimg.135fbf4795c9102d2434.png",
     "static/media/9793159_4212150.jpg": "/React-Project-1/static/media/9793159_4212150.36bff438c20d9702c079.jpg",
     "static/media/contact-banner.png": "/React-Project-1/static/media/contact-banner.50925778d23171dba4f9.png",
     "static/media/Infosys-logo.png": "/React-Project-1/static/media/Infosys-logo.5835cb7c81c0160b2115.png",
@@ -66,8 +66,8 @@
     "static/media/slick.ttf": "/React-Project-1/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/React-Project-1/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-Project-1/index.html",
-    "main.d36ee8c7.css.map": "/React-Project-1/static/css/main.d36ee8c7.css.map",
-    "main.bf6c37bb.js.map": "/React-Project-1/static/js/main.bf6c37bb.js.map",
+    "main.9d29c660.css.map": "/React-Project-1/static/css/main.9d29c660.css.map",
+    "main.112705f2.js.map": "/React-Project-1/static/js/main.112705f2.js.map",
     "969.3f06e026.chunk.css.map": "/React-Project-1/static/css/969.3f06e026.chunk.css.map",
     "969.92699bce.chunk.js.map": "/React-Project-1/static/js/969.92699bce.chunk.js.map",
     "858.e5b5f74c.chunk.js.map": "/React-Project-1/static/js/858.e5b5f74c.chunk.js.map",
@@ -81,7 +81,7 @@
     "727.c591ccd9.chunk.js.map": "/React-Project-1/static/js/727.c591ccd9.chunk.js.map",
     "252.efd3680e.chunk.css.map": "/React-Project-1/static/css/252.efd3680e.chunk.css.map",
     "252.e3aa38b4.chunk.js.map": "/React-Project-1/static/js/252.e3aa38b4.chunk.js.map",
-    "853.c43a576a.chunk.css.map": "/React-Project-1/static/css/853.c43a576a.chunk.css.map",
+    "853.2ca9d487.chunk.css.map": "/React-Project-1/static/css/853.2ca9d487.chunk.css.map",
     "853.c4250ca9.chunk.js.map": "/React-Project-1/static/js/853.c4250ca9.chunk.js.map",
     "315.fe8e4cd6.chunk.js.map": "/React-Project-1/static/js/315.fe8e4cd6.chunk.js.map",
     "483.271886aa.chunk.js.map": "/React-Project-1/static/js/483.271886aa.chunk.js.map",
@@ -89,7 +89,7 @@
     "444.91c9c930.chunk.css.map": "/React-Project-1/static/css/444.91c9c930.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.d36ee8c7.css",
-    "static/js/main.bf6c37bb.js"
+    "static/css/main.9d29c660.css",
+    "static/js/main.112705f2.js"
   ]
 }
