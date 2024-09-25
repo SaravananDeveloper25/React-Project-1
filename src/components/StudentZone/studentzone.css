@@ -55,6 +55,12 @@
 .petbox{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.petcontent{
+    display: flex;
+    align-items: center;
+    gap: 130px;
 }
 .placement-list{
     background-color: #121481;
@@ -75,6 +81,23 @@
     background-color: red;
     border-radius: 10px;
     
+}
+
+@media (min-width:1281px) {
+    .stubanner-content{
+        display: flex;
+        flex: 0;
+    }
+    .stubanner-content p{
+        width: 600px;
+    }
+    .stubanner-img{
+        justify-content: end;
+        width: 100%;
+    }
+    .pet{
+        height: 80vh;
+    }
 }
 /* 
 *{

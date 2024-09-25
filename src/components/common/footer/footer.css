@@ -32,13 +32,14 @@ li{
 }
 .footer-form>input:focus{
    
-    all: unset;
+/* 
     background-color: #fff;
     width: 400px;
     height: 50px;
     border-radius: 10px;
     color:black;
-    padding: 0px 2px;
+    padding: 0px 2px; */
+    outline: none;
 
 }
 .footer-form-btn{
@@ -48,3 +49,4 @@ li{
     border: none;
     background: none;
 }
+

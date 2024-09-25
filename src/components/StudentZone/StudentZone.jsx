@@ -38,9 +38,13 @@ function StudentZone() {
             <img src={petimg} alt="" />
           </div>
           <div className='petcontent'>
+            <div></div>
+            <div>
             <h3 style={{fontSize:'24px',fontWeight:700}}>Placement Eligibility Test</h3>
             <p style={{fontSize:'20px'}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam aperiam tempore minus iure fugiat alias perspiciatis praesentium eum sunt voluptates veniam repudiandae accusantium nam excepturi provident quas vitae cupiditate dicta beatae, eveniet sequi labore numquam. Sequi ad aut, eveniet ipsam ducimus ex quos voluptatibus iusto vel debitis voluptate ut atque!</p>
             <button className='red-btn'>Button</button>
+            </div>
+
           </div>
           </div>
         </Container>
@@ -56,7 +60,7 @@ function StudentZone() {
         <Row>
           {resume_img.map((val,index)=>{
             return(
-              <Col key={index}>
+              <Col key={index} className='text-center'>
                 <img src={val} alt="" />
                 <div style={{display:'flex',justifyContent:'center',marginTop:'1rem'}}>
                 <button className='red-btn'>view</button>
