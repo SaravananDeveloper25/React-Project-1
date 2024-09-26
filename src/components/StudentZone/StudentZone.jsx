@@ -7,7 +7,7 @@ import resume1 from '../../images/resume 1.png'
 import resume2 from '../../images/resume 2.png'
 import resume3 from '../../images/resume 3.png'
 import resume4  from '../../images/resume 4.png'
-
+import PlacedStudent from './PlacedStudent';
 function StudentZone() {
   const placement=[
     {
@@ -137,6 +137,8 @@ function StudentZone() {
             </div>
           </Container>
       </div>
+      <section></section>
+     <PlacedStudent/> 
     </>
   )
 }

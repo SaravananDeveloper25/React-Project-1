@@ -100,6 +100,22 @@
 .placed-count-box:hover{
     box-shadow: 0 6px 12.6px 0 #FF71CD;
 }
+.placement-table>thead{
+    background-color: #FB0C0C;
+
+   
+}
+.placement-table>thead th{
+    padding: 10px 20px;    
+}
+.placement-table>tbody{
+    background-color: #fff;
+}
+.placement-table>tbody td{
+    padding: 10px 20px;
+    border-bottom: 1px solid #E6E6E6; 
+    
+}
 @media (min-width:1281px) {
     .stubanner-content{
         display: flex;
