@@ -7,7 +7,6 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-
     color: #fff;
 }
 .stubanner-box{
@@ -60,6 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .petcontent{
     display: flex;
@@ -89,7 +89,7 @@
 }
 .placed-count{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     row-gap:30px ;
     column-gap: 70px;
 }
@@ -133,6 +133,59 @@
     }
     .placement-list{
         height: 80vh;
+    }
+}
+@media (max-width:450px) {
+    .stubanner{
+        height: 80vh;
+    }
+    .stubanner-img{
+        display: none;
+    }
+    .stubanner-box{
+        display: flex;
+        height: 100%;
+        margin: 0;
+    }
+    .stubanner-content{
+        flex: 1;
+        
+    }
+    .stubanner-content>p{
+        padding-right: 60px;
+    }
+    .pet{
+        height: 140vh;
+        text-align: justify;
+    }
+    .petbox{
+        align-items: start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .petimg>img{
+        transform: scale(.7);
+    }
+    .petcontent{
+        gap: 10px;
+        padding: 0  10px;
+    }
+    .petcontent>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row-hide{
+        display: none;
+    }
+    .placement-list{
+        height: 180vh;
+    }
+    .placement-box>p{
+        padding: 0 !important;
+    }
+    .placement-box{
+        padding: 0 20px;
     }
 }
 /* 

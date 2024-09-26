@@ -76,7 +76,6 @@ function StudentZone() {
           </div>
         </Container>
       </div>    
-      <section></section>  
       <div className="resume">
         <div className="resumehead">
         <h4>Resume</h4>
@@ -87,7 +86,7 @@ function StudentZone() {
         <Row>
           {resume_img.map((val,index)=>{
             return(
-              <Col key={index} className='text-center'>
+              <Col key={index} className='text-center mb-4'>
                 <img src={val} alt="" />
                 <div style={{marginTop:'1rem'}}>
                 <button className='red-btn'>view</button>
@@ -97,7 +96,7 @@ function StudentZone() {
           })}
         </Row>
         <section></section>
-        <Row>
+        <Row className='row-hide'>
           {resume_img.map((val,index)=>{
             return(
               <Col key={index} className='text-center'>
@@ -138,7 +137,10 @@ function StudentZone() {
           </Container>
       </div>
       <section></section>
-     <PlacedStudent/> 
+      <div className='row-hide'>
+      <PlacedStudent/>
+      </div>
+     
     </>
   )
 }
