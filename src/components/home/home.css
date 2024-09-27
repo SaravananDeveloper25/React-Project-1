@@ -573,7 +573,7 @@ backdrop-filter: blur(10px);
       display: none;
   } */
   .our_services{
-      display: none;
+      padding: 0 30px;
   }
   .contact_banner{
    min-height:280px ;

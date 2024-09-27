@@ -162,6 +162,7 @@
         align-items: start;
         justify-content: center;
         flex-wrap: wrap;
+        transform: scale(.9);
     }
     .petimg>img{
         transform: scale(.7);
