@@ -80,7 +80,7 @@ const AppContent = () => {
         style={{ display: isVisible ? 'block' : 'none' }}>
         <i className="fa-solid fa-angle-up"></i>
       </button>
-      {/* <Footer /> */}
+      <Footer />
       </Suspense>
     </>
   );

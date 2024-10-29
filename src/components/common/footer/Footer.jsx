@@ -68,14 +68,12 @@ const Footer = () => {
                     </div>
                   </Col>
                 </Row>
-                <Row xl={12} >
-                  <Col style={{display:'grid',justifyContent:'center'}}>
-                    <div style={{background:'#FFFFFF66',height:'2px',width:'800px'}}></div>
-                    <div>
-                      <p style={{textAlign:'center',marginTop:'20px'}}><CopyrightIcon></CopyrightIcon>getin technologies, All rights reserved</p>
+                <div className='footer-row-2'>
+                    <div className='footer-line'></div>
+                    <div className="footer-copy">
+                      <p>&copy;getin technologies, All rights reserved</p>
                     </div>
-                  </Col>
-                </Row>
+                </div>
             </Container>
 
         </div>

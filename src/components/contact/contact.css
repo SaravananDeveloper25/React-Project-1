@@ -4,253 +4,163 @@
 }
 .contact-banner{
     height: 80vh;
-    background:url(../../images/contact-banner.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-    width: 100%;
-    padding: 50px;
-    margin: 0;
-}
-.banner-content{
-    color: #fff;
-    height: 300px;
-    width: 500px;
-}
-.banner-content>span{
-    display: inline-block;
-    height: 5px;
-    width: 100px;
-    background-color: #fff;
-}
-.contactbox1{
-
-    display: none;
-}
-.contactbox1 img{
-    height: 100px;
-    width: 100px;
-    margin-right: 20px;
-    border-radius: 50%;
-   
-}
-.getin-touch{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.getin-touch p{
-    font-weight: 500;
-}
-.getin-touch div{
-    height: 5px;
-    width: 50px;
-    background-color: black;
-    
-}
-.contactbox2{
-    position: relative;
-    width: 100%;
-    height: 30vh;
-    background-image:linear-gradient(to right,rgb(0, 0, 71),rgb(22, 22, 102),rgb(93, 93, 179));
-    margin-top: 10rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.boxx{
-    position: relative;
-    bottom: 100px;
-    background-color: #fff;
-    margin-left: 30px;
-    padding: 10px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    border-radius:5px ;
-    box-shadow: 0 0 1px 2px rgb(211, 208, 208);
-}
-
-.boxx img{
-    position: absolute;
-    left: 50%;
-    top: -20%;
-    transform: translate(-50%);
-    height: 80px;
-    width: 80px;
-    margin-right: 20px;
-    border-radius: 50%;
-    border: 5px solid red;
-}
-.boxx h5{
-    padding-top:50px ;
-    color: blue;
-}
-.dots{
+    background: linear-gradient(180deg, #121481 70%, #04041B 100%);
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 3rem;
 
 }
-.dot{
-    height: 5px;
-    width: 5px;
-    background-color: black;
-    border-radius: 50%;
-    margin: 2px;
+.contact-banner>h2{
+    font-size: 64px;
+    font-weight: 700;
 }
-.boxy{
-    margin-top: 5rem;
+
+.contact-forms{
+    display: flex;
+    justify-content: center;
+}
+.contact-form{
+    background-color: #121481;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    padding: 10px;
+    gap: 20px;
+    width: 600px;
+    padding: 80px;
+    box-shadow: 2px 0 10px 2px gray;
     border-radius: 10px;
-    box-shadow: 0 0 2px 2px rgb(186, 186, 186);
     position: relative;
-    text-align: center;
-}
-.boxy img{
-    position: absolute;
-    top: -80px;
-    left: 50%;
-    transform: translate(-50%,50%);
-    height: 80px;
-    width: 80px;
-    margin-right: 20px;
-    border-radius: 50%;
-    border: 5px solid red;
-}
-.boxy>div{
-    padding-top: 2rem;
-}
-.form{
-    margin: 5rem 2rem;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 0 2px 2px rgb(202, 196, 196);
-    border-radius: 20px;
-}
-
-.form>input,select,textarea{
-    margin: 10px;
+    z-index: 1;
     
 }
-.form>.form-head{
+.contact-form>h2{
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+}
+.contact-form>form{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
 }
-.form-head img{
-    position: absolute;
-    top: -110px;
-    left: 50%;
-    transform: translate(-50%,50%);
-    height: 80px;
-    width: 80px;
-    margin-right: 20px;
-    border-radius: 50%;
-    border: 5px solid red;
-}
-.form-head >h5{
-padding-top: 2rem;
-}
-.inp{
-    position: relative;
-    margin: 10px 0;
-}
-.inp>label{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #fff;
-    color: gray;
-    padding: 0 10px;
-    transition: 0.3s;
-}
-.inp>input{
-    width: 100%;
-    
-}
-.inp>input:focus{
-    outline: 1px solid rgb(187, 187, 187);
-    padding: 10px;
-    outline-offset:0;
-    width: 97%;
-    border-radius: 2px;
-}
-.inp>input:focus+label,.inp > input:not(:placeholder-shown) + label {
-    top: -15px;
-    font-size: 12px;
-    color: blue;
-    margin:0 10px;
-}
-/* .inp > input::placeholder {
-    color: transparent;
-} */
-#input{
-    padding: 0 0 0 50px;
-}
-#input:focus{
-    outline: 1px solid rgb(187, 187, 187);
-    padding: 0 0 0 50px;
-    outline-offset:0;
-    width: 90% !important;
-    border-radius: 2px;
-    box-shadow: none;
-}
-textarea{
-    width: 95%;
-}
-textarea:focus{
-    outline: 1px solid rgb(187, 187, 187);
-    outline-offset:0;
-    width: 97% !important;
-    border-radius: 2px;
-    box-shadow: none;
-}
-.inp>#la{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-textarea:focus+#la{
-    top: -5px;
-    font-size: 12px;    
-    color: blue;
-    margin:0 10px;
-}
-.inp > textarea:not(:placeholder-shown) + #la{
-    top: -5px;
-    color: blue;
-}
-textarea:focus{
-    width: 100%;
-}
-.form>input[type="submit"]{
-    width: 200px;
-    padding: 10px;
+.contact-form>h2::after{
+    content: '';
+   display: block;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%);
+    height: 5px;
+    width: 150px;
     background-color: red;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+.form-inpt{
+    position: relative;
+}
+label{
+    color: #fff;
+    font-size: 14px;
+}
+.form-inpt>label{
+    position: absolute;
+    left: -2px;
+    top: -1px;
+    color: #fff;
+    transition: 0.3s all ease;
+}
+.form-inpt>input{
+    border-top:none ;
+    border-left:none ;
+    border-right:none ;
+    margin-bottom: 10px;
+    background-color: transparent !important;
+    width: 100%;
+    margin-bottom:20px ;
+    color: #fff;
+    
+}
+.form-inpt>input:focus{
+    outline: none;
+}
+.form-inpt > input:focus + label {
+    top: -20px;
+}
+.contact-form>form>select{
+    background-color: transparent;
+    border-top:none ;
+    border-left:none ;
+    border-right:none ;
+    color: #fff;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+.contact-form>form>textarea{
+    background-color: transparent;
+    border-top:none ;
+    border-left:none ;
+    border-right:none ;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.contact-form > form > div> input[type="checkbox"] {
+    appearance: none !important; /* Removes default styling of the checkbox */
+    width: 16px;
+    height: 16px;
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #ccc; /* Adds a border to visualize the checkbox */
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 2px;
+}
+.contact-form > form >div> input[type="checkbox"]:checked {
+    background-color:#fff; /* Set color when checked */
+    border-color: #ff0000;
+    position: relative;
+}
+.contact-form > form > div>input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(255, 0, 0);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg); /* Creates the checkmark shape */
+}
+.form-button{
+    margin-top: 2rem;
+}
+.form-button>button{
+    background-color: #ff0000;
     border: none;
-    box-shadow: 0 0 2px 2px rgb(137, 136, 136);
+    padding: 10px 15px;
+    border-radius: 10px;
     color: #fff;
     font-weight: 600;
 }
-iframe[src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.4565313437843!2d77.94630977315106!3d9.555855880523383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b012d42f70581bf%3A0x7d3a3a27b3e10ce8!2sGetin%20Technologies%20Virudhunagar!5e0!3m2!1sen!2sin!4v1718189901019!5m2!1sen!2sin"]{
-    height: 400px;
-    width: 100%;
-    border: none;
+
+.contact-details{
+    background-color: #fff;
+    max-width: 500px;
+    padding: 50px 30px 30px;
+    box-shadow: 14px 4px 20.4px 0px #00000040;
     border-radius: 10px;
-    box-shadow: 0 0 2px 2px gray;
-    padding: 0;
-    margin: 2rem;
+    height: 600px;
+    margin-top: 2rem;
+}
+.address{
+    margin-top: 1rem;
+}
+.address>ul>li{
+    padding-bottom: 10px;
+}
+.social{
+    display: flex;
+    justify-content: end;
 }
 @media (min-width:1300px) and (max-width:1350px) {
     .contact-banner{
@@ -276,42 +186,19 @@ iframe[src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.456531343
 
 }
 @media (max-width:650px) and (max-width:450px){
-    .contact-banner{
-        background-size: contain;
-        height: 25vh;
-        padding: 0 20px;
-        font-size: 50%;
+    .contact-forms{
+        display: flex;
+        flex-wrap: wrap;
     }
-    .contactbox1{
-        margin: 10px auto;
-        width: 300px;
+    .contact-form{
+        padding: 20px;
     }
-    .boxx{
-        width: 300px;
-        position: relative;
-        margin:0px auto 50px;
+    .contact-details{
+        padding: 20px;
+        min-width: 300px;
     }
-    .contactbox2{
-        position: static;
-        height: 100%;
-        background: none;
-    }
-    .getin-touch p{
-        font-weight: 500;
-        text-align: center;
-    }
-    .boxx img{
-        position: absolute;
-        top: -40px;
-    }
-    .banner-content{
-        color: #fff;
-        height: 300px;
-        width: 300px;
-    }
-    #ro{
-        height: 1200px;
-      
+    .contact-details>.map>iframe{
+        width: 100%;
     }
 
 }

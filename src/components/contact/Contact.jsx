@@ -4,6 +4,12 @@ import img1 from '../../images/11668340_20945203.jpg';
 import { Row, Col, Container } from 'react-bootstrap';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneInTalkOutlinedIcon from '@mui/icons-material/PhoneInTalkOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookIcon from '@mui/icons-material/Facebook';
 function Contact() {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -12,187 +18,62 @@ function Contact() {
         console.log(value);
     };
     return (
-        <div style={{ }}>
-            <section className='contact-banner'>
-                <div className='banner-content'>
-                    <h1>Heading wit Heading</h1>
-                    <span></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque tenetur harum possimus quod expedita sapiente, nemo cum quasi similique mollitia ad hic autem, vero reprehenderit illo nihil quis error!</p>
+        <div className='contact'>
+           <div className="contact-banner">
+            <h2>Contact Us</h2>
+           </div>
+           <Container>
+           <div className='contact-forms'>
+                <div className="contact-form">
+                    <h2>Get in touch</h2>
+                    <form action="">
+                        <div className='form-inpt'>
+                        <input type="text" />
+                        <label htmlFor="">Name</label>
+                        </div>
+                        <div className='form-inpt'>
+                        <input type="email" />
+                        <label htmlFor="">Email</label>
+                        </div>
+                        <select name="" id="">
+                            <option value="">services</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <label htmlFor="">message</label>
+                        <textarea name="" id="" rows={5}></textarea>
+                        <div>
+                        <input type="checkbox" name="" id=""  style={{color:'transparent'}}/>
+                        <label>I would like to receive the newsletter.</label>
+                        </div>
+                       <div className='form-button'>
+                       <button>submit</button>
+                       </div>
+                        
+                    </form>
                 </div>
-                <div className="contactbox1">
-                    <img src={img1} alt="" />
+                <div className='contact-details'>
                     <div>
-                        <h3>Contact</h3>
-                        <p>phone</p>
-                        <p>Whatsapp</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque dolores neque distinctio harum tenetur, quaerat praesentium cum dolorem consequatur similique est inventore. Laborum magni perspiciatis reiciendis labore vel provident eum!</p>
+                    </div>
+                    <div className='map'>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15756.025523648923!2d77.8528246!3d9.1538954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xafc0deb432f728e7%3A0xab9157c9b333e21a!2sGetin%20Technologies%20Kovilpatti!5e0!3m2!1sen!2sin!4v1730114973527!5m2!1sen!2sin" width="400" height="200"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <div className='address'>
+                        <ul>
+                            <li><LocationOnIcon></LocationOnIcon>NYC, United States</li>
+                            <li><PhoneInTalkOutlinedIcon></PhoneInTalkOutlinedIcon>000111222333</li>
+                            <li><EmailOutlinedIcon></EmailOutlinedIcon>somebody@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div className='social'>
+                        <FacebookIcon></FacebookIcon>
+                        <InstagramIcon></InstagramIcon>
+                        <YouTubeIcon></YouTubeIcon>
                     </div>
                 </div>
-            </section>
-            <div className='getin-touch'>
-                <h1>Getin with You</h1>
-                <p>And you will Witness our Extraordinary Dedication to Digital Learning.</p>
-                <div></div>
             </div>
-            <div className='contactbox2'>
-                <Container>
-                    <Row id='ro'>
-                        <Col className='boxx' xl={2} xs={12} md={6}>
-                            <img src={img1} alt="" />
-                            <div>
-                                <h5>ADMISSION</h5>
-                                <div className='dots'>
-                                    <div className='dot'></div>
-                                    <div className='dot'></div>
-                                    <div className='dot'></div>
-                                </div>
-                                <p>Phone</p>
-                                <p>Whatsapp</p>
-                            </div>
-                        </Col>
-                        <Col className='boxx' xl={2} xs={12} md={3}>
-                            <img src={img1} alt="" />
-                            <div>
-                                <h5>ADMISSION</h5>
-                                <div className='dots'>
-                                    <div className='dot'></div>
-                                    <div className='dot'></div>
-                                    <div className='dot'></div>
-                                </div>
-                                <p>Phone</p>
-                                <p>Whatsapp</p>
-                            </div>
-                        </Col>
-                        <Col className='boxx' xl={2} md={6} xs={12}>
-                            <img src={img1} alt="" />
-                            <div>
-                                <h5>ADMISSION</h5>
-                                <div className='dots'>
-                                    <div className='dot'></div>
-                                    <div className='dot'></div>
-                                    <div className='dot'></div>
-                                </div>
-                                <p>Phone</p>
-                                <p>Whatsapp</p>
-                            </div>
-                        </Col>
-                        <Col className='boxx' xl={2} md={6} xs={12}>
-                            <img src={img1} alt="" />
-                            <div>
-                                <h5>ADMISSION</h5>
-                                <div className='dots'>
-                                    <div className='dot'></div>
-                                    <div className='dot'></div>
-                                    <div className='dot'></div>
-                                </div>
-                                <p>Phone</p>
-                                <p>Whatsapp</p>
-                            </div>
-                        </Col>
-                        <Col className='boxx' xl={2} md={2} xs={12}>
-                            <img src={img1} alt="" />
-                            <div>
-                                <h5>ADMISSION</h5>
-                                <div className='dots'>
-                                    <div className='dot'></div>
-                                    <div className='dot'></div>
-                                    <div className='dot'></div>
-                                </div>
-                                <p>Phone</p>
-                                <p>Whatsapp</p>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-
-
-
-            </div>
-            <Container>
-                <Row>
-                    <Col xs={12} xl={6} md={6}>
-                        <Row>
-                            <div className="boxy">
-                                <img src="" alt="" />
-                                <div>
-                                    <p>NEED A CORPORATE LEARNING SOLUTION?</p>
-                                    <p>Get in Touch.</p>
-
-                                    <p>email</p>
-                                    <p>phone</p>
-                                </div>
-                            </div>
-                        </Row>
-                        <Row>
-                            <div className="boxy">
-                                <img src="" alt="" />
-                                <div>
-                                    <p>NEED A CORPORATE LEARNING SOLUTION?</p>
-                                    <p>Get in Touch.</p>
-
-                                    <p>email</p>
-                                    <p>phone</p>
-                                </div>
-                            </div>
-                        </Row>
-                        <Row>
-                            <div className="boxy">
-                                <img src="" alt="" />
-                                <div>
-                                    <p>NEED A CORPORATE LEARNING SOLUTION?</p>
-                                    <p>Get in Touch.</p>
-
-                                    <p>email</p>
-                                    <p>phone</p>
-                                </div>
-                            </div>
-                        </Row>
-                    </Col>
-                    <Col xs={12} xl={6} md={6}> 
-                        <Row>
-                            <form action="" className='form'>
-                                <div className='form-head'>
-                                <img src="" alt="Form Image" />
-                                <h5>Let's Resolve Your Query</h5>
-                                </div>
-                                <hr />
-                                <div className='inp'>
-                                
-                                    <input type="text" placeholder="" id='name' />
-                                    <label htmlFor="name">Name</label>
-                                </div>
-                                <div className='inp'>
-
-                                <input type="email" placeholder="" id='mail'/>  
-                                <label htmlFor="mail">Your Email</label>                                  
-                                </div>
-                                <PhoneInput
-                                   style={{margin:'10px',paddingRight:'13px'}}
-                                    country={'in'}
-                                    value={''}
-                                    onChange={handleOnChange}
-                                    inputProps={{
-                                        id:'input',
-                                        style:{width:'100%'},
-                                        name: 'phone',
-                                        required: true,
-                                        autoFocus: true,
-                                        placeholder: 'Your Phone Number'
-                                    }}
-                                />
-                                <div className="inp">
-                                    <textarea name="message" placeholder='' id="message" ></textarea>
-                                    <label htmlFor="message" id='la'>Your Message</label>
-                                </div>
-
-                                <input type="submit" value="Submit" />
-                            </form>
-                        </Row>
-                        <Row>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.4565313437843!2d77.94630977315106!3d9.555855880523383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b012d42f70581bf%3A0x7d3a3a27b3e10ce8!2sGetin%20Technologies%20Virudhunagar!5e0!3m2!1sen!2sin!4v1718189901019!5m2!1sen!2sin"  height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </Row>
-                    </Col>
-                </Row>
-            </Container>
+           </Container>
+  
         </div>
 
     )
