@@ -9,6 +9,8 @@ import Faq from './Faq';
 import Certificate from './Certificate';
 import JavaReview from './JavaReview';
 import { motion } from 'framer-motion';
+import { useParams } from 'react-router-dom';
+import courses from '../coursedata/course.details';
 
 const containerVariants = {
     initial: { opacity: 0, y: 50 },
@@ -41,10 +43,11 @@ const Java = () => {
     function handleClick(index) {
         setToggle(toggle === index ? null : index); // Toggle the value of 'toggle' state based on the index
     }
-
+    const { courseId } = useParams();
+    const course = courses.find(c => c.id === courseId);
     return (
-        <div style={{ marginTop: '4.7rem' }}>
-            <div className='intro_banner' style={{ height: '80vh' }}>
+        <div>
+            <div className='intro_banner' style={{paddingTop:'4.7rem',paddingBottom:'4rem' }}>
                 <Container >
                     <Row className='banner_row'>
                         <Col xs={12} md={12} xl={8} className='banner_col mt-4'>
@@ -53,16 +56,16 @@ const Java = () => {
                                 animate="animate"
                                 variants={containerVariants}
                             >
-                                <motion.h1 variants={childVariants}>Java Training Course</motion.h1>
+                                <motion.h1 variants={childVariants}>{course.title}</motion.h1>
                                 <motion.p variants={childVariants}>
-                                    Join the program and get the opportunity to learn under the guidance of a Java specialist.
+                                    {course.description}
                                 </motion.p>
                                 <motion.div variants={childVariants}>
                                     <span>⭐️⭐️⭐️⭐️</span>
                                 </motion.div>
                                 <motion.hr variants={childVariants} />
                                 <motion.div style={{ display: 'flex' }} id='banner_p' variants={childVariants}>
-                                    <p className='banner_p'>Course Duration <br /> 30 Hrs.</p>
+                                    <p className='banner_p'>Course Duration <br /> {course.duration} Hrs.</p>
                                     <p className='banner_p'>Live Project <br /> 3 Projects</p>
                                     <p className='banner_p'>Certification<br /> Pass Guaranteed</p>
                                     <p className='banner_p'>Training Format<br /> Live Online / Classroom</p>
@@ -79,7 +82,7 @@ const Java = () => {
                             className='mt-4'
                             style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
                         >
-                            <motion.div initial="initial" animate="animate" variants={childVariants}>
+                            <motion.div initial="initial" animate="animate" variants={childVariants} className='banner-image'>
                                 <img id='hide' src="https://picsum.photos/200/300" alt="" height={200} width={300} />
                                 <button
                                     id='hide'

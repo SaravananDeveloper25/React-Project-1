@@ -6,8 +6,6 @@ import StudentZone from './components/StudentZone/StudentZone';
 import './App.css';
 const Home = lazy(() => import('./components/home/Home'));
 const Java = lazy(() => import('./components/Courses/java/Java'));
-const Python = lazy(() => import('./components/Courses/python/python'));
-const Csharp = lazy(() => import('./components/Courses/Csharp/Csharp'));
 const StudentReview = lazy(() => import('./components/Review/StudentReview'));
 const AllCoursesPage = lazy(() => import('./components/common/AllCoursesPage'));
 
@@ -62,11 +60,7 @@ const AppContent = () => {
       
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/courses'>
-          <Route path='/courses/java' element={<Java />} />
-          <Route path='/courses/python' element={<Python />} />
-          <Route path='/courses/Csharp' element={<Csharp />} />
-        </Route>
+        <Route path="/courses/:courseId" element={<Java />} />
         <Route path='/allcourses' element={<AllCoursesPage />} />
         <Route path='/studentzone' element={<StudentZone />} />
         <Route path='/review' element={<StudentReview />} />

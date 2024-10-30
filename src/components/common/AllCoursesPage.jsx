@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import allcourses from '../../data/allcourses';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Head from './header/Head'
+import { Link } from 'react-router-dom';
 
 
 function AllCoursesPage() {
@@ -15,10 +16,9 @@ function AllCoursesPage() {
         <Head/>
         <div style={{marginTop:'7rem'}}>
           
-          <Container>
-          <div style={{margin:'auto 10%'}}>
+          <Container >
           <Row>
-                <Col xl={4}>
+                <Col xl={4} className='hide'>
                     <div className='all-course-box1'>
                       <div className='course-box1-links'>
                         <div style={{display:'flex',alignItems:'center',flexDirection:'column'}}>
@@ -34,7 +34,7 @@ function AllCoursesPage() {
                       </div>
                     </div>
                 </Col>
-                <Col xl={8}>
+                <Col xl={8} >
                 {allcourses.map((course)=>{
                    return <div className='all-course-box2' key={course.coursename}>
                    <div className='course-box2-img'>
@@ -46,14 +46,16 @@ function AllCoursesPage() {
                        <div style={{background:'#121481',width:'45px',height:'25px',fontSize:'12px',padding:'2px 4px',color:'#fff',fontWeight:600,borderRadius:'5px'}}>
                        <p>⭐️ {course.reviews}</p>
                        </div>
-                       <p style={{fontSize:'14px',margin:'10px 0 0 0'}}>{course.para}</p>
+                       <p style={{fontSize:'14px',margin:'10px 0 0 0'}}  className='hide'>{course.para}</p>
                      </div>
                      <div className='box2-content-price'>
-                       <h3 style={{color:'#121481'}}>₹ {course.New_price}</h3>
-                       <h6 style={{textDecorationLine:'line-through',color:'#121481',opacity:.5}}>₹ {course.old_price}</h6>
+                      <div>
+                      <h3 style={{color:'#121481'}}>₹ {course.New_price}</h3>
+                      <h6 style={{textDecorationLine:'line-through',color:'#121481',opacity:.5}}>₹ {course.old_price}</h6>
+                      </div>
                        <div className='content-price-btn'>
                        <button className='buttn1'>Book Now</button>
-                       <button className='buttn2'>View More</button>
+                       <Link to='/courses/java'><button className='buttn2'>view more</button></Link>
                        </div>
                      </div>
                    </div>
@@ -61,7 +63,6 @@ function AllCoursesPage() {
                 })}
                 </Col>
             </Row>
-          </div>
            
           </Container>
         </div>
